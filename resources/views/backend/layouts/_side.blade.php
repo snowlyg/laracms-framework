@@ -37,25 +37,6 @@
                 </li>
                 @endif
             @endforeach
-
-            <!--
-            <li class="treeview">
-                <a href="javascript:;">
-                    <i class="icon icon-file"></i>
-                    <span>页面演示</span>
-                    <span class="pull-right-container">
-                        <i class="icon icon-angle-left"></i>
-                    </span>
-                </a>
-                <ul class="treeview-menu">
-                    <li class="active"><a href=""><i class="icon icon-circle-blank"></i> 空白页</a></li>
-                    <li><a href=""><i class="icon icon-circle-blank"></i> 登录</a></li>
-                    <li><a href=""><i class="icon icon-circle-blank"></i> 404页</a></li>
-                    <li><a href=""><i class="icon icon-circle-blank"></i> 系统设置</a></li>
-                    <li><a href=""><i class="icon icon-circle-blank"></i> 用户列表</a></li>
-                </ul>
-            </li>
-            -->
         </ul>
     </section>
 </aside>

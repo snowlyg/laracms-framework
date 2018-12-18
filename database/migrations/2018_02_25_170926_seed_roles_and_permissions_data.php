@@ -118,10 +118,10 @@ class SeedRolesAndPermissionsData extends Migration
     
         // 创建管理员账户
         $user = User::create([
-            'name' => 'admin',
-            'email' => 'admin@56br.com',
+            'name' => 'jcuanAAT',
+            'email' => 'jcuanAAT@admin.com',
             'status' => '1',
-            'password' => bcrypt('123456'),
+            'password' => bcrypt('JunYoo2018'),
             'avatar' => 'images/avatar/201803/04/9CT3XvX0Jcv8QEEzPCzgg8k0NXJVwrMsaKKf1iN9.jpeg',
         ]);
         
@@ -149,7 +149,7 @@ class SeedRolesAndPermissionsData extends Migration
         DB::table($tableNames['model_has_permissions'])->delete();
         DB::table($tableNames['roles'])->delete();
         DB::table($tableNames['permissions'])->delete();
-        User::delete();
+        User::where('id','>',0)->delete();
         Model::reguard();
     }
 }

@@ -37,7 +37,8 @@
                     </form>
                 </div>
                 <div class="tools-group">
-                    <a href="{{ route('articles.create') }}?type={{$type}}"  class="btn btn-primary"><i class="icon icon-plus-sign"></i> 添加</a>
+                    <a href="{{ route('articles.create') }}?type={{$type}}"  class="btn btn-primary"><i class="icon icon-plus-sign"></i> 添加内容</a>
+                    <a href="{{ route('articles.create_jobs') }}?type={{$type}}"  class="btn btn-primary"><i class="icon icon-plus-sign"></i> 添加职位</a>
                     <button type="submit" class="btn btn-info" form="form-article-list"><i class="icon icon-sort-by-order-alt"></i> 排序</button>
                     <button type="button" class="btn btn-danger articles-destroy-all" form="form-article-list" formaction="{{route('articles.destroy.all')}}"><i class="icon icon-trash"></i> 删除</button>
 
@@ -100,7 +101,11 @@
                                 <td class="text-center">
                                     <button type="button" data-type="ajax" data-url="{{ route('articles.multiple.files', [ $article->id, 'images', ]) }}" data-toggle="modal" class="btn btn-xs btn-warning form-multiple-files">多图</button>
                                     <button type="button" data-type="ajax" data-url="{{ route('articles.multiple.files', [ $article->id, 'annex', ]) }}" data-toggle="modal" class="btn btn-xs btn-info form-multiple-files">附件</button>
-                                    <a href="{{ route('articles.edit', $article->id) }}?type={{$type}}" class="btn btn-xs btn-primary">编辑</a>
+                                   @if($article->link == 'jobs')
+                                        <a href="{{ route('articles.edit_jobs', $article->id) }}?type={{$type}}" class="btn btn-xs btn-primary">编辑</a>
+                                   @else
+                                        <a href="{{ route('articles.edit', $article->id) }}?type={{$type}}" class="btn btn-xs btn-primary">编辑</a>
+                                    @endif
                                     <a href="javascript:;" data-url="{{ route('articles.destroy', $article->id) }}?type={{$type}}" class="btn btn-xs btn-danger form-delete">删除</a>
                                 </td>
                             </tr>

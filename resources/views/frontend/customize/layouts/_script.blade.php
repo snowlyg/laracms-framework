@@ -9,7 +9,7 @@
     };
     layui.config({
         version: "3.0.0"
-        ,base: '/vendor/laracms/plugins/layui/mods/'
+        ,base: '/plugins/layui/mods/'
     }).extend({
         fly: 'index'
     }).use(['fly']);

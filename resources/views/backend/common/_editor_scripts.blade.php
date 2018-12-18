@@ -35,80 +35,88 @@ $editor = config('administrator.editor', 'simditor');
     });
 </script>
 @elseif('ueditor' == $editor)
-<script type="text/javascript"  src="{{ asset('vendor/laracms/plugins/ueditor/ueditor.config.js') }}"></script>
-<script type="text/javascript"  src="{{ asset('vendor/laracms/plugins/ueditor/ueditor.all.min.js') }}"></script>
-<script type="text/javascript"  src="{{ asset('vendor/laracms/plugins/ueditor/lang/zh-cn/zh-cn.js') }}"></script>
-<script>
-
-    var simple = [[
-        'paragraph', 'fontfamily', 'fontsize', 'lineheight', '|',
-        'bold', 'italic', 'underline', 'strikethrough', '|',
-        'justifyleft', 'justifycenter', 'justifyright', '|',
-        'pasteplain', 'emotion', 'simpleupload', '|',
-        'link', 'unlink', 'anchor',
-        'undo', 'redo', 'removeformat','insertorderedlist', 'insertunorderedlist', '|',
-        'source', 'help']];
-
-    var full = [
-        [
-        'paragraph', 'fontfamily', 'fontsize','|',
-        'forecolor', 'backcolor', '|', 'lineheight', 'indent', '|',
-        'bold', 'italic', 'underline', 'strikethrough', '|',
-        'justifyleft', 'justifycenter', 'justifyright', '|',
-        'insertorderedlist', 'insertunorderedlist', 'pasteplain',
-        'fullscreen'
-        ],
-        [
-            'undo', 'redo', 'removeformat', '|',
-            'link', 'unlink', 'anchor', '|',
-            'inserttable', '|',
-            'emotion', 'simpleupload', 'insertimage', 'insertvideo', 'map', '|',
-            'insertcode', 'source', 'searchreplace', 'help'
-        ]
-    ];
-
-    var options =
-        {
-            lang: 'zh-cn',
-            toolbars: full,
-            serverUrl: "{{ route('uploader.ueditor') }}?file_type=image&folder={{$folder}}&editor=1&object_id={{$object_id ?? 0}}&",
-            autoClearinitialContent: false,
-            wordCount: false,
-            initialStyle: 'p{line-height:1em}embed,.edui-upload-video,.edui-faked-video{background:url(\'/js/ueditor/themes/default/images/videologo.gif\') no-repeat center center; border:1px solid gray;}',
-            enableAutoSave: false,
-            elementPathEnabled: false,
-            initialFrameWidth: '100%',
-            autoHeightEnabled: false,
-            initialFrameHeight: 400,
-            zIndex: 5,
-            removeFormatTags: 'big,dfn,font,ins,strike,tt,u',
-            removeFormatAttributes: 'lang,hspace',
-            allowDivTransToP: false
-        };
-    if(!window.editor) window.editor = {};
-
-
-    window.ueditor = [];
-    $(".editor").each(function(index){
-
-        this.classList.remove('form-control');
-        this.style.height = '400px';
-
-        window.ueditor[index] =  UE.getEditor($(this).attr('id'), options);
-
-        window.ueditor[index].addListener('ready', function()
-        {
-            $(this.container).parent().removeClass('form-control');
+    @include('vendor.ueditor.assets')
+    <script type="text/javascript">
+        var ue = UE.getEditor('container');
+        ue.ready(function() {
+            ue.execCommand('serverparam', '_token', '{{ csrf_token() }}'); // 设置 CSRF token.
         });
+    </script>
+{{--<script type="text/javascript"  src="{{ asset('vendor/laracms/plugins/ueditor/ueditor.config.js') }}"></script>--}}
+{{--<script type="text/javascript"  src="{{ asset('vendor/laracms/plugins/ueditor/ueditor.all.min.js') }}"></script>--}}
+{{--<script type="text/javascript"  src="{{ asset('vendor/laracms/plugins/ueditor/lang/zh-cn/zh-cn.js') }}"></script>--}}
+{{--<script>--}}
 
-        window.ueditor[index].addListener('fullscreenchanged', function(e, fullscreen)
-        {
-            var $container = $(this.container).css('z-index', fullscreen ? 1050 : 5);
-            if (fullscreen && window.navigator.userAgent.indexOf('Firefox') > -1) {
-                $container.css('top', 0);
-            }
-        });
+    {{--var simple = [[--}}
+        {{--'paragraph', 'fontfamily', 'fontsize', 'lineheight', '|',--}}
+        {{--'bold', 'italic', 'underline', 'strikethrough', '|',--}}
+        {{--'justifyleft', 'justifycenter', 'justifyright', '|',--}}
+        {{--'pasteplain', 'emotion', 'simpleupload', '|',--}}
+        {{--'link', 'unlink', 'anchor','attachment',--}}
+        {{--'undo', 'redo', 'removeformat','insertorderedlist', 'insertunorderedlist', '|',--}}
+        {{--'source', 'help']];--}}
 
-    });
-</script>
+    {{--var full = [--}}
+        {{--[--}}
+        {{--'paragraph', 'fontfamily', 'fontsize','|',--}}
+        {{--'forecolor', 'backcolor', '|', 'lineheight', 'indent', '|',--}}
+        {{--'bold', 'italic', 'underline', 'strikethrough', '|',--}}
+        {{--'justifyleft', 'justifycenter', 'justifyright', '|',--}}
+        {{--'insertorderedlist', 'insertunorderedlist', 'pasteplain',--}}
+        {{--'fullscreen'--}}
+        {{--],--}}
+        {{--[--}}
+            {{--'undo', 'redo', 'removeformat', '|',--}}
+            {{--'link', 'unlink', 'anchor', '|',--}}
+            {{--'inserttable', '|',--}}
+            {{--'emotion', 'simpleupload', 'attachment','insertimage', 'insertvideo', 'map', '|',--}}
+            {{--'insertcode', 'source', 'searchreplace', 'help'--}}
+        {{--]--}}
+    {{--];--}}
+
+    {{--var options =--}}
+        {{--{--}}
+            {{--lang: 'zh-cn',--}}
+            {{--toolbars: full,--}}
+            {{--serverUrl: "{{ route('uploader.ueditor') }}?file_type=image&folder={{$folder}}&editor=1&object_id={{$object_id ?? 0}}&",--}}
+            {{--autoClearinitialContent: false,--}}
+            {{--wordCount: false,--}}
+            {{--initialStyle: 'p{line-height:1em}embed,.edui-upload-video,.edui-faked-video{background:url(\'/js/ueditor/themes/default/images/videologo.gif\') no-repeat center center; border:1px solid gray;}',--}}
+            {{--enableAutoSave: false,--}}
+            {{--elementPathEnabled: false,--}}
+            {{--initialFrameWidth: '100%',--}}
+            {{--autoHeightEnabled: false,--}}
+            {{--imageScaleEnabled: false,--}}
+            {{--initialFrameHeight: 400,--}}
+            {{--zIndex: 5,--}}
+            {{--removeFormatTags: 'big,dfn,font,ins,strike,tt,u',--}}
+            {{--removeFormatAttributes: 'lang,hspace',--}}
+            {{--allowDivTransToP: false--}}
+        {{--};--}}
+    {{--if(!window.editor) window.editor = {};--}}
+
+
+    {{--window.ueditor = [];--}}
+    {{--$(".editor").each(function(index){--}}
+
+        {{--this.classList.remove('form-control');--}}
+        {{--this.style.height = '400px';--}}
+
+        {{--window.ueditor[index] =  UE.getEditor($(this).attr('id'), options);--}}
+
+        {{--window.ueditor[index].addListener('ready', function()--}}
+        {{--{--}}
+            {{--$(this.container).parent().removeClass('form-control');--}}
+        {{--});--}}
+
+        {{--window.ueditor[index].addListener('fullscreenchanged', function(e, fullscreen)--}}
+        {{--{--}}
+            {{--var $container = $(this.container).css('z-index', fullscreen ? 1050 : 5);--}}
+            {{--if (fullscreen && window.navigator.userAgent.indexOf('Firefox') > -1) {--}}
+                {{--$container.css('top', 0);--}}
+            {{--}--}}
+        {{--});--}}
+
+    {{--});--}}
+{{--</script>--}}
 @endif

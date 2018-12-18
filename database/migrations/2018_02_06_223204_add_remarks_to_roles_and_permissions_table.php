@@ -46,7 +46,7 @@ class AddRemarksToRolesAndPermissionsTable extends Migration
     public function down()
     {
         $tableNames = config('permission.table_names');
-        Schema::drop($tableNames['roles']);
-        Schema::drop($tableNames['permissions']);
+//        Schema::drop($tableNames['roles']);
+//        Schema::drop($tableNames['permissions']);
     }
 }

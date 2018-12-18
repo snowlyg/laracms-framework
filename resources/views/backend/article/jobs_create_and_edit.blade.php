@@ -37,7 +37,7 @@
                         </div>
 
                         <div class="form-group has-feedback  has-icon-right">
-                            <label for="title" class="col-md-2 col-sm-2 control-label required">标题</label>
+                            <label for="title" class="col-md-2 col-sm-2 control-label required">职位</label>
                             <div class="col-md-5 col-sm-10">
                             <input type="text" name="title" required autocomplete="off" class="form-control" value="{{ old('title',$article->title) }}" >
                             </div>
@@ -45,23 +45,24 @@
 
 
                         <div class="form-group has-feedback  has-icon-right">
-                            <label for="subtitle" class="col-md-2 col-sm-2 control-label">副标题</label>
+                            <label for="subtitle" class="col-md-2 col-sm-2 control-label">招聘人数</label>
                             <div class="col-md-5 col-sm-10">
                             <input type="text" name="subtitle" autocomplete="off" class="form-control" value="{{ old('subtitle',$article->subtitle) }}" >
+                            </div>
+                        </div>
+
+
+                        <div class="form-group has-feedback  has-icon-right">
+                            <label for="description" class="col-md-2 col-sm-2 control-label">招聘部门</label>
+                            <div class="col-md-5 col-sm-10">
+                                <input name="description" class="form-control" rows="4">{{  old('description', $article->description) }}</input>
                             </div>
                         </div>
 
                         <div class="form-group has-feedback  has-icon-right">
                             <label for="keywords" class="col-md-2 col-sm-2 control-label">关键词</label>
                             <div class="col-md-5 col-sm-10">
-                            <input type="text" name="keywords" autocomplete="off" class="form-control" value="{{ old('keywords',$article->keywords) }}" >
-                            </div>
-                        </div>
-
-                        <div class="form-group has-feedback  has-icon-right">
-                            <label for="description" class="col-md-2 col-sm-2 control-label">描述</label>
-                            <div class="col-md-5 col-sm-10">
-                            <textarea name="description" class="form-control" rows="4">{{  old('description', $article->description) }}</textarea>
+                                <input type="text" name="keywords" autocomplete="off" class="form-control" value="{{ old('keywords',$article->keywords) }}" >
                             </div>
                         </div>
 
@@ -69,7 +70,7 @@
                             <label for="content" class="col-md-2 col-sm-2 control-label required">内容</label>
                             <div class="col-md-8 col-sm-10">
                                 <script id="container" name="content" type="text/plain">{!! old('content', $article->content) !!}</script>
-                            {{--<textarea name="content" id="container" class="form-control editor" >{{  old('content', $article->content) }}</textarea>--}}
+                            {{--<textarea name="content" id="content" class="form-control editor" >{{  old('content', $article->content) }}</textarea>--}}
                             </div>
                         </div>
 
@@ -122,7 +123,7 @@
                             @endphp
                             <select name="template" class="form-control">
                                 @foreach($templates as $key => $val)
-                                    @if($key != 'job')
+                                    @if($key == 'job')
                                         <option @if($template == $key) selected="selected" @endif value="{{$key}}">{{$val}}</option>
                                     @endif
                                 @endforeach
