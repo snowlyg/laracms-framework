@@ -111,8 +111,12 @@ class CategoryHandler
      * @param string $type
      * @return mixed
      */
-    public function getCategorys($type = 'article'){
-        return app(Category::class)->ordered()->recent('asc')->where('type','=', $type)->get();
+    public function getCategorys($type = 'article',$link='news'){
+        if($link == 'news'){
+            return app(Category::class)->ordered()->recent('asc')->where('type','=', $type)->whereIn('link',['news','products'])->get();
+        }else{
+            return app(Category::class)->ordered()->recent('asc')->where('type','=', $type)->where('link','=', $link)->get();
+        }
     }
 
     /**

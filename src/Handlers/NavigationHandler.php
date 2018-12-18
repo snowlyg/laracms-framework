@@ -39,13 +39,20 @@ class NavigationHandler
     public function level($navigations, $parent = 0, $lavel = 0)
     {
         $newNavigations = [];
-        foreach($navigations as $navigation){
-            if($navigation->parent == $parent){
+        foreach ($navigations as $navigation) {
+            if ($navigation->parent == $parent) {
                 $navigation->lavel = $lavel;
                 $navigation->is_end = 0;
                 $newNavigations[] = $navigation;
 
-                if($tmpNavigations = call_user_func_array([$this, __FUNCTION__],[$navigations, $navigation->id, ($lavel+1) ])){
+                if ($tmpNavigations = call_user_func_array([
+                    $this,
+                    __FUNCTION__
+                ], [
+                    $navigations,
+                    $navigation->id,
+                    ($lavel + 1)
+                ])) {
                     $newNavigations = !empty($newNavigations) ? array_merge($newNavigations, $tmpNavigations) : $tmpNavigations;
                 }
             }
@@ -65,11 +72,18 @@ class NavigationHandler
     public function select($navigations, $parent = 0, $parentName = null)
     {
         static $newNavigations = [];
-        foreach($navigations as $navigation){
-            if($navigation->parent == $parent){
+        foreach ($navigations as $navigation) {
+            if ($navigation->parent == $parent) {
                 $navigation->parentName = $parentName ? ($parentName . ' / ' . $navigation->title) : $navigation->title;
                 $newNavigations[$navigation->id] = $navigation->parentName;
-                call_user_func_array([$this, __FUNCTION__],[$navigations, $navigation->id, $navigation->parentName ]);
+                call_user_func_array([
+                    $this,
+                    __FUNCTION__
+                ], [
+                    $navigations,
+                    $navigation->id,
+                    $navigation->parentName
+                ]);
             }
         }
 
@@ -82,19 +96,20 @@ class NavigationHandler
      * @param string $category
      * @return mixed
      */
-    public function getNavigations($category = 'desktop'){
+    public function getNavigations($category = 'desktop')
+    {
 
-        $key = 'navigation_cache_'.$category;
+        $key = 'navigation_cache_' . $category;
 
         $navigation = \Cache::get($key);
 
-        if( \App::environment('production') && $navigation ){
+        if (\App::environment('production') && $navigation) {
             return $navigation;
         }
 
-        $navigation = app(Navigation::class)->ordered()->recent('asc')->where('category','=', $category)->where('is_show', '=', '1')->get();
+        $navigation = app(Navigation::class)->ordered()->recent('asc')->where('category', '=', $category)->where('is_show', '=', '1')->get();
 
-        if(\App::environment('production')){
+        if (\App::environment('production')) {
             $expiredAt = now()->addMinutes(config('cache.expired.navigation', 10));
             \Cache::put($key, $navigation, $expiredAt);
         }
@@ -106,8 +121,9 @@ class NavigationHandler
      * 获取页面列表
      * @return mixed
      */
-    public function getPageList(){
-        return app(Page::class)->ordered()->recent()->where('status','=', '1')->get()->pluck('title','id')->toArray();
+    public function getPageList()
+    {
+        return app(Page::class)->ordered()->recent()->where('status', '=', '1')->get()->pluck('title', 'id')->toArray();
     }
 
     /**
@@ -116,7 +132,8 @@ class NavigationHandler
      * @param string $category
      * @return array
      */
-    public function frontend($category = 'desktop'){
+    public function frontend($category = 'desktop')
+    {
         return $this->withRecursion($this->filterNav($this->getNavigations($category)));
     }
 
@@ -126,7 +143,8 @@ class NavigationHandler
      * @param string $category
      * @return array
      */
-    public function completeFrontend($category = 'desktop'){
+    public function completeFrontend($category = 'desktop')
+    {
         return $this->withRecursion($this->getNavigations($category));
     }
 
@@ -137,8 +155,9 @@ class NavigationHandler
      * @param boolean $showOneLevel 是否显示一级导航，默认不显示
      * @return array
      */
-    public function getCurrentBrothersAndChildNavigation($category = 'desktop', $showOneLevel = false){
-        $navigation = $this->getNavigationFind(request('navigation',0));
+    public function getCurrentBrothersAndChildNavigation($category = 'desktop', $showOneLevel = false)
+    {
+        $navigation = $this->getNavigationFind(request('navigation', 0));
         $parent = $navigation->parent ?? 0;
         return $parent == 0 && $showOneLevel == false ? [] : $this->withRecursion($this->getNavigations($category), $parent ?? 0);
     }
@@ -149,8 +168,46 @@ class NavigationHandler
      * @param string $category
      * @return array|null
      */
-    public function getCurrentChildNavigation($category = 'desktop'){
-        return ($navigation = request('navigation',0)) > 0 ? $this->withRecursion($this->getNavigations($category), $navigation) : [];
+    public function getCurrentChildNavigations($category = 'desktop')
+    {
+        return ($navigation = $this->getCurrentNavigation()) ? $this->withRecursion($this->getNavigations($category),$navigation->id) : [];
+    }
+
+    /**
+     * 获取当前子导航
+     *
+     * @param string $category
+     * @return array|null
+     */
+    public function getCurrentChildNavigation($category = 'desktop')
+    {
+        return ($navigation =  request('navigation', 0)) ? $this->getNavigationFind($navigation) : [];
+    }
+
+    /**
+     * 获取当前导航
+     *
+     * @param string $category
+     * @return array|null
+     */
+    public function getCurrentNavigation($category = 'desktop')
+    {
+        $navigation_id = request('navigation', 0);
+
+        if ($navigation_id > 0) {
+            $navigation = $this->getNavigationFind($navigation_id);
+
+            if ($navigation->parent) {
+                $navigation = $this->getNavigationFind($navigation->parent);
+            }
+
+        } else {
+            $navigation = null;
+        }
+
+
+        return $navigation;
+
     }
 
     /**
@@ -158,16 +215,21 @@ class NavigationHandler
      *
      * @return array
      */
-    public function breadcrumb(){
+    public function breadcrumb()
+    {
         $breadcrumb = [];
-        $navigation = $this->getNavigationFind(request('navigation',0));
-        if(!$navigation){  return $breadcrumb; } // 默认首页
+        $navigation = $this->getNavigationFind(request('navigation', 0));
+        if (!$navigation) {
+            return $breadcrumb;
+        } // 默认首页
 
         $path = $navigation->path ?? '0';
-        if($path == '0'){ return $breadcrumb = [$navigation]; } // 当前为一级栏目直接返回
+        if ($path == '0') {
+            return $breadcrumb = [$navigation];
+        } // 当前为一级栏目直接返回
 
         $pathArray = explode('-', $path);
-        foreach(Navigation::whereIn('id',$pathArray)->get() as $item){
+        foreach (Navigation::whereIn('id', $pathArray)->get() as $item) {
             $key = array_search($item->id, $pathArray);
             $breadcrumb[$key] = $item;
         }
@@ -184,23 +246,24 @@ class NavigationHandler
      * @param $id
      * @return mixed
      */
-    protected function getNavigationFind($id){
+    protected function getNavigationFind($id)
+    {
 
-        if(intval($id) < 1){
+        if (intval($id) < 1) {
             return null;
         }
 
-        $key = 'navigation_item_cache_'.$id;
+        $key = 'navigation_item_cache_' . $id;
 
         $navigation = \Cache::get($key);
 
-        if( \App::environment('production') && $navigation ){
+        if (\App::environment('production') && $navigation) {
             return $navigation;
         }
 
         $navigation = Navigation::find($id);
 
-        if(\App::environment('production')){
+        if (\App::environment('production')) {
             $expiredAt = now()->addMinutes(config('cache.expired.navigation', 10));
             \Cache::put($key, $navigation, $expiredAt);
         }
@@ -211,8 +274,9 @@ class NavigationHandler
     /**
      * 过滤导航数据
      */
-    protected function filterNav($navigations){
-        $navigations->filter(function ($value, $key){
+    protected function filterNav($navigations)
+    {
+        $navigations->filter(function ($value, $key) {
             return $value->is_show == 1;
         });
 
@@ -226,11 +290,18 @@ class NavigationHandler
      * @param int $parent
      * @return array
      */
-    protected function withRecursion($navigations, $parent = 0){
+    protected function withRecursion($navigations, $parent = 0)
+    {
         $newNavigations = [];
-        foreach($navigations as $navigation){
-            if($navigation->parent == $parent){
-                $navigation->child = call_user_func_array([$this, __FUNCTION__],[$navigations, $navigation->id ]);
+        foreach ($navigations as $navigation) {
+            if ($navigation->parent == $parent) {
+                $navigation->child = call_user_func_array([
+                    $this,
+                    __FUNCTION__
+                ], [
+                    $navigations,
+                    $navigation->id
+                ]);
                 $newNavigations[] = $navigation;
             }
         }
@@ -244,10 +315,11 @@ class NavigationHandler
      * @param Navigation $navigation
      * @return string
      */
-    public function createUrl(Navigation $navigation){
+    public function createUrl(Navigation $navigation)
+    {
         $url = '';
         $params = is_json($navigation->params) ? json_decode($navigation->params) : new \stdClass;
-        switch (strtolower($navigation->type)){
+        switch (strtolower($navigation->type)) {
             case 'link':
                 $url = $params->link ?? '';
                 break;
@@ -258,20 +330,29 @@ class NavigationHandler
                     false
                 ];
 
-                if(is_json($params->params) && !empty($routeParams = json_decode($params->params, true))){
+                if (is_json($params->params) && !empty($routeParams = json_decode($params->params, true))) {
                     $args[1] = array_merge($args[1], $routeParams);
                 }
 
                 $url = route(...$args);
                 break;
             case 'article':
-                $url = route('article.index',[$navigation->id, $params->category_id], false);
+                $url = route('article.index', [
+                    $navigation->id,
+                    $params->category_id
+                ], false);
                 break;
             case 'category':
-                $url = route('category.index',[$navigation->id, $params->category_id], false);
+                $url = route('category.index', [
+                    $navigation->id,
+                    $params->category_id
+                ], false);
                 break;
             case 'page':
-                $url = route('page.show',[$navigation->id, $params->page_id], false);
+                $url = route('page.show', [
+                    $navigation->id,
+                    $params->page_id
+                ], false);
                 break;
             case 'navigation':
                 $url = $params->link ?? '';

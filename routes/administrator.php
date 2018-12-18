@@ -112,6 +112,8 @@ Route::group(['domain' => config('administrator.domain'), 'prefix' => config('ad
     Route::delete('articles/multiple/files/{article}/{field}/{multipleFile}','ArticlesController@multipleFilesDestroy')->name('articles.multiple.files.destroy');
     Route::post('articles/multiple/files/{article}/{field}','ArticlesController@multipleFilesStore');
     Route::resource('articles', 'ArticlesController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
+    Route::get('articles/create/jobs', 'ArticlesController@create_jobs')->name('articles.create_jobs');
+    Route::get('articles/edit_jobs/{article}', 'ArticlesController@edit_jobs')->name('articles.edit_jobs');
 
     # 区块相关路由
     Route::resource('blocks', 'BlocksController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);

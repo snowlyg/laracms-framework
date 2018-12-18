@@ -32,7 +32,7 @@ class CategoryRequest extends Request
             'order' => 'nullable|integer',
             'path' => 'nullable|max:255',
             'type' => 'required|alpha_dash|min:1|max:30',
-            'link' => 'nullable|url|unique:category|max:255',
+            'link' => 'nullable|max:255',
             'template' => 'nullable|alpha_dash|max:255',
         ];
     }

@@ -30,7 +30,7 @@ class ArticleTransformer extends TransformerAbstract
             'keywords' => $article->keywords,
             'description' => $article->description,
             'author' => $article->author,
-            'thumb' => storage_image_url($article->thumb),
+            'thumb' => $article->getThumb(),
             'content' => $article->content,
             'is_link' => $article->is_link,
             'link' => $article->getLink(),

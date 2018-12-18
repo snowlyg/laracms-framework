@@ -203,7 +203,7 @@ class Article extends Model
         if($this->is_link == 1 && !empty($this->link)){
             return $this->link;
         }
-        return route('article.show',[$navigation_id, $category_id, $this->id]);
+        return route('article.common',[$navigation_id, $category_id, $this->id]);
     }
 
     /**

@@ -106,8 +106,10 @@ if( !function_exists('get_active_template') ){
 
         $view_path = config('view.paths')[0] . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'frontend'. DIRECTORY_SEPARATOR . config('theme.desktop') . DIRECTORY_SEPARATOR . $path . DIRECTORY_SEPARATOR;
         $list =  glob($view_path.$prefix."-*.blade.php");
+
+
         $templates = [
-            '' => '默认',
+            'default' => '默认',
         ];
 
         foreach ($list as $file) {
@@ -533,15 +535,38 @@ if( !function_exists("frontend_current_brother_and_child_navigation") ){
     }
 }
 
+if( !function_exists("frontend_current_child_navigations") ){
+    /**
+     * 获取当前子导航
+     *
+     * @param string $category
+     * @return mixed
+     */
+    function frontend_current_child_navigations($category = 'desktop'){
+        return $navigationHandler = app(\Wanglelecc\Laracms\Handlers\NavigationHandler::class)->getCurrentChildNavigations($category);
+    }
+}
 if( !function_exists("frontend_current_child_navigation") ){
     /**
-     * 获取当前自导航
+     * 获取当前子导航
      *
      * @param string $category
      * @return mixed
      */
     function frontend_current_child_navigation($category = 'desktop'){
         return $navigationHandler = app(\Wanglelecc\Laracms\Handlers\NavigationHandler::class)->getCurrentChildNavigation($category);
+    }
+}
+
+if( !function_exists("frontend_current_navigation") ){
+    /**
+     * 获取当前自导航
+     *
+     * @param string $category
+     * @return mixed
+     */
+    function frontend_current_navigation($category = 'desktop'){
+        return $navigationHandler = app(\Wanglelecc\Laracms\Handlers\NavigationHandler::class)->getCurrentNavigation($category);
     }
 }
 
@@ -741,3 +766,4 @@ if( !function_exists("business_log") ){
         return laracms_log('business', $type, $description, $model);
     }
 }
+

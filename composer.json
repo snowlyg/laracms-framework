@@ -1,12 +1,12 @@
 {
-    "name": "wanglelecc\/laracms-framework",
+    "name": "569616226\/laracms-framework",
     "description": "A LaraCMS Framework.",
     "license": "MIT",
     "authors": [
         {
-            "name": "wanglelecc",
-            "email": "wanglelecc@gmail.com",
-            "homepage": "https://www.56br.com",
+            "name": "569616226",
+            "email": "569616226@qq.com",
+            "homepage": "",
             "role": "Developer"
         }
     ],
@@ -45,7 +45,7 @@
         "socialiteproviders/weixin": "^4.0",
         "socialiteproviders/weixin-web": "^3.0",
         "spatie/laravel-permission": "~2.7",
-        "teamtnt/laravel-scout-tntsearch-driver": "^3.2",
+        "teamtnt/laravel-scout-tntsearch-driver": "^6.1.0",
         "tymon/jwt-auth": "~1.0.0-rc.1",
         "vinkla/hashids": "^5.1",
         "zhuzhichao/ip-location-zh": "^2.4",

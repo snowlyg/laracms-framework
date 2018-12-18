@@ -112,6 +112,23 @@ class ArticlesController extends Controller
     }
 
     /**
+     * 创建
+     *
+     * @param Article $article
+     * @param CategoryHandler $categoryHandler
+     * @return mixed
+     * @throws \Illuminate\Auth\Access\AuthorizationException
+     */
+    public function create_jobs(Article $article, CategoryHandler $categoryHandler)
+    {
+        $this->authorize('create', $article);
+
+        $category = $categoryHandler->web($categoryHandler->select($categoryHandler->getCategorys('article','jobs')), []);
+
+        return backend_view('article.jobs_create_and_edit', compact('article','category'));
+    }
+
+    /**
      * 保存
      *
      * @param ArticleRequest $request
@@ -143,6 +160,22 @@ class ArticlesController extends Controller
         $category = $categoryHandler->web($categoryHandler->select($categoryHandler->getCategorys('article')), $articleCategorys);
 
         return backend_view('article.create_and_edit', compact('article', 'category'));
+    }
+    /**
+     * 编辑
+     *
+     * @param Article $article
+     * @param CategoryHandler $categoryHandler
+     * @return mixed
+     * @throws \Illuminate\Auth\Access\AuthorizationException
+     */
+    public function edit_jobs(Article $article, CategoryHandler $categoryHandler)
+    {
+        $this->authorize('update', $article);
+        $articleCategorys = $article->categorys()->pluck('category_id')->toArray();
+        $category = $categoryHandler->web($categoryHandler->select($categoryHandler->getCategorys('article','jobs')), $articleCategorys);
+
+        return backend_view('article.jobs_create_and_edit', compact('article', 'category'));
     }
 
     /**

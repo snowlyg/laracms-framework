@@ -60,7 +60,7 @@ class Category extends Model
         $blocks = Block::whereIn('type', ['latestArticle', 'hotArticle','latestProduct','hotProduct',])->get();
         foreach($blocks as $block){
             $params = is_json($block->params) ? json_decode($block->params) : new \stdClass;
-            if( $this->id == get_value($params,'category_id', 0) ){
+            if( $this->id == $params->category_id ){
                 return '区块已使用，无法删除！'; // 找到已使用，不允许删除
             }
         }
@@ -72,7 +72,7 @@ class Category extends Model
         }
         
         // 4. 检查分类下是否有文章
-        $count = DB::table('article_category')->where('category_id',$this->id)->count();
+        $count = DB::talbe('article_category')->where('category_id',$this->id)->count();
         if($count > 0){
             return '当前分类下有内容，无法删除！'; // 找到已使用，不允许删除
         }
