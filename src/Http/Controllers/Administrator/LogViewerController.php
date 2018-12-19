@@ -13,18 +13,18 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
+namespace 569616226\Laracms\Http\Controllers\Administrator;
 
 use Illuminate\Support\Facades\Crypt;
-use Wanglelecc\Laracms\Support\LogViewer;
-use Wanglelecc\Laracms\Models\Log;
+use 569616226\Laracms\Support\LogViewer;
+use 569616226\Laracms\Models\Log;
 use Illuminate\Http\Request;
 
 /**
  * Log 控制器
  *
  * Class LogViewerController
- * @package Wanglelecc\Laracms\Http\Controllers\Administrator
+ * @package 569616226\Laracms\Http\Controllers\Administrator
  */
 class LogViewerController extends Controller
 {

@@ -13,20 +13,20 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
+namespace 569616226\Laracms\Http\Controllers\Administrator;
 
 use Hash;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-use Wanglelecc\Laracms\Models\User;
-use Wanglelecc\Laracms\Http\Requests\Administrator\UserRequest;
-use Wanglelecc\Laracms\Handlers\UploadHandler;
+use 569616226\Laracms\Models\User;
+use 569616226\Laracms\Http\Requests\Administrator\UserRequest;
+use 569616226\Laracms\Handlers\UploadHandler;
 
 /**
  * 用户操作控制器
  *
  * Class UserController
- * @package Wanglelecc\Laracms\Http\Controllers\Administrator
+ * @package 569616226\Laracms\Http\Controllers\Administrator
  */
 class UserController extends Controller
 {

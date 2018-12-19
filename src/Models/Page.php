@@ -13,10 +13,10 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Models;
+namespace 569616226\Laracms\Models;
 
-use Wanglelecc\Laracms\Models\Traits\WithCommonHelper;
-use Wanglelecc\Laracms\Events\BehaviorLogEvent;
+use 569616226\Laracms\Models\Traits\WithCommonHelper;
+use 569616226\Laracms\Events\BehaviorLogEvent;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Builder;
 
@@ -25,7 +25,7 @@ use Illuminate\Database\Eloquent\Builder;
  * 页面模型
  *
  * Class Page
- * @package Wanglelecc\Laracms\Models
+ * @package 569616226\Laracms\Models
  */
 class Page extends Model
 {
@@ -64,11 +64,11 @@ class Page extends Model
     }
 
     public function created_user(){
-        return $this->belongsTo('Wanglelecc\Laracms\Models\User', 'created_op');
+        return $this->belongsTo('569616226\Laracms\Models\User', 'created_op');
     }
 
     public function updated_user(){
-        return $this->belongsTo('Wanglelecc\Laracms\Models\User', 'updated_op');
+        return $this->belongsTo('569616226\Laracms\Models\User', 'updated_op');
     }
 
     /**

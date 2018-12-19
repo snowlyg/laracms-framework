@@ -13,18 +13,18 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers\Api\V1;
+namespace 569616226\Laracms\Http\Controllers\Api\V1;
 
 use Illuminate\Http\Request;
-use Wanglelecc\Laracms\Http\Controllers\Api\Controller;
-use Wanglelecc\Laracms\Transformers\BlockTransformer;
-use Wanglelecc\Laracms\Models\Block;
+use 569616226\Laracms\Http\Controllers\Api\Controller;
+use 569616226\Laracms\Transformers\BlockTransformer;
+use 569616226\Laracms\Models\Block;
 
 /**
  * 区块控制器
  *
  * Class BlockController
- * @package Wanglelecc\Laracms\Http\Controllers\Api\V1
+ * @package 569616226\Laracms\Http\Controllers\Api\V1
  */
 class BlockController extends Controller
 {

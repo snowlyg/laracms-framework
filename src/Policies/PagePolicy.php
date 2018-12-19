@@ -13,16 +13,16 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Policies;
+namespace 569616226\Laracms\Policies;
 
-use Wanglelecc\Laracms\Models\User;
-use Wanglelecc\Laracms\Models\Page;
+use 569616226\Laracms\Models\User;
+use 569616226\Laracms\Models\Page;
 
 /**
  * 页面授权策略
  *
  * Class PagePolicy
- * @package Wanglelecc\Laracms\Policies
+ * @package 569616226\Laracms\Policies
  */
 class PagePolicy extends Policy
 {

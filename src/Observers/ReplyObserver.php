@@ -13,10 +13,10 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Observers;
+namespace 569616226\Laracms\Observers;
 
-use Wanglelecc\Laracms\Models\Reply;
-use Wanglelecc\Laracms\Notifications\ArticleReplied;
+use 569616226\Laracms\Models\Reply;
+use 569616226\Laracms\Notifications\ArticleReplied;
 
 // creating, created, updating, updated, saving,
 // saved,  deleting, deleted, restoring, restored
@@ -25,7 +25,7 @@ use Wanglelecc\Laracms\Notifications\ArticleReplied;
  * 回复观察者
  *
  * Class ReplyObserver
- * @package Wanglelecc\Laracms\Observers
+ * @package 569616226\Laracms\Observers
  */
 class ReplyObserver
 {

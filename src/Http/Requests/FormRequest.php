@@ -13,10 +13,10 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Requests;
+namespace 569616226\Laracms\Http\Requests;
 
 use Illuminate\Validation\Rule;
-use Wanglelecc\Laracms\Models\Form;
+use 569616226\Laracms\Models\Form;
 
 class FormRequest extends Request
 {

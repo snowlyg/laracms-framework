@@ -13,7 +13,7 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Models\Traits;
+namespace 569616226\Laracms\Models\Traits;
 
 use Carbon\Carbon;
 use Cache;
@@ -23,7 +23,7 @@ use DB;
  * 模型公共排序方法
  *
  * Trait WithOrderHelper
- * @package Wanglelecc\Laracms\Models\Traits
+ * @package 569616226\Laracms\Models\Traits
  */
 trait WithOrderHelper
 {

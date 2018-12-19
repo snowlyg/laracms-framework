@@ -13,19 +13,19 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers\Api\V1;
+namespace 569616226\Laracms\Http\Controllers\Api\V1;
 
 use Illuminate\Http\Request;
-use Wanglelecc\Laracms\Http\Controllers\Api\Controller;
-use Wanglelecc\Laracms\Transformers\ArticleTransformer;
-use Wanglelecc\Laracms\Models\Article;
-use Wanglelecc\Laracms\Models\Category;
+use 569616226\Laracms\Http\Controllers\Api\Controller;
+use 569616226\Laracms\Transformers\ArticleTransformer;
+use 569616226\Laracms\Models\Article;
+use 569616226\Laracms\Models\Category;
 
 /**
  * 文章控制器
  *
  * Class ArticleController
- * @package Wanglelecc\Laracms\Http\Controllers\Api\V1
+ * @package 569616226\Laracms\Http\Controllers\Api\V1
  */
 class ArticleController extends Controller
 {

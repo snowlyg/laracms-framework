@@ -1,12 +1,12 @@
 <?php
-namespace Wanglelecc\Laracms\Providers;
+namespace 569616226\Laracms\Providers;
 
 use TeamTNT\TNTSearch\TNTSearch;
 use Laravel\Scout\EngineManager;
 use TeamTNT\Scout\Console\ImportCommand;
 use TeamTNT\Scout\Engines\TNTSearchEngine;
 use TeamTNT\Scout\TNTSearchScoutServiceProvider;
-use Wanglelecc\Laracms\Handlers\TokenizerHandler;
+use 569616226\Laracms\Handlers\TokenizerHandler;
 
 class ScoutServiceProvider extends TNTSearchScoutServiceProvider
 {

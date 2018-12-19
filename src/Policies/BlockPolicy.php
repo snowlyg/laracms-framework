@@ -13,16 +13,16 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Policies;
+namespace 569616226\Laracms\Policies;
 
-use Wanglelecc\Laracms\Models\User;
-use Wanglelecc\Laracms\Models\Block;
+use 569616226\Laracms\Models\User;
+use 569616226\Laracms\Models\Block;
 
 /**
  * 区块授权策略
  *
  * Class BlockPolicy
- * @package Wanglelecc\Laracms\Policies
+ * @package 569616226\Laracms\Policies
  */
 class BlockPolicy extends Policy
 {

@@ -13,7 +13,7 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Jobs;
+namespace 569616226\Laracms\Jobs;
 
 use DB;
 use Vod\Request\V20170321 as Vod;

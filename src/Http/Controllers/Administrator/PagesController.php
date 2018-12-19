@@ -13,17 +13,17 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
+namespace 569616226\Laracms\Http\Controllers\Administrator;
 
-use Wanglelecc\Laracms\Models\Page;
+use 569616226\Laracms\Models\Page;
 use Illuminate\Http\Request;
-use Wanglelecc\Laracms\Http\Requests\Administrator\PageRequest;
+use 569616226\Laracms\Http\Requests\Administrator\PageRequest;
 
 /**
  * 页面控制器
  *
  * Class PagesController
- * @package Wanglelecc\Laracms\Http\Controllers\Administrator
+ * @package 569616226\Laracms\Http\Controllers\Administrator
  */
 class PagesController extends Controller
 {

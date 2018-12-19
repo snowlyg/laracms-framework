@@ -13,17 +13,17 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
+namespace 569616226\Laracms\Http\Controllers\Administrator;
 
-use Wanglelecc\Laracms\Models\Block;
+use 569616226\Laracms\Models\Block;
 use Illuminate\Http\Request;
-use Wanglelecc\Laracms\Http\Requests\Administrator\BlockRequest;
+use 569616226\Laracms\Http\Requests\Administrator\BlockRequest;
 
 /**
  * 后台区块管理控制器
  *
  * Class BlocksController
- * @package Wanglelecc\Laracms\Http\Controllers\Administrator
+ * @package 569616226\Laracms\Http\Controllers\Administrator
  */
 class BlocksController extends Controller
 {

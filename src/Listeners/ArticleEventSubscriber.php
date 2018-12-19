@@ -13,7 +13,7 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Listeners;
+namespace 569616226\Laracms\Listeners;
 
 use Ip;
 use DB;
@@ -21,7 +21,7 @@ use Log;
 use Request;
 use Illuminate\Support\Carbon;
 use Vod\Request\V20170321 as Vod;
-use Wanglelecc\Laracms\Jobs\GetVodCoverURL;
+use 569616226\Laracms\Jobs\GetVodCoverURL;
 
 
 class ArticleEventSubscriber
@@ -68,13 +68,13 @@ class ArticleEventSubscriber
     public function subscribe($events)
     {
         $events->listen(
-            'Wanglelecc\Laracms\ArticleSavedEvent',
-            'Wanglelecc\Laracms\Listeners\ArticleEventSubscriber@onArticleSaved'
+            '569616226\Laracms\ArticleSavedEvent',
+            '569616226\Laracms\Listeners\ArticleEventSubscriber@onArticleSaved'
         );
 
         $events->listen(
-            'Wanglelecc\Laracms\VideoSavedEvent',
-            'Wanglelecc\Laracms\Listeners\UserEventSubscriber@onVideoSaved'
+            '569616226\Laracms\VideoSavedEvent',
+            '569616226\Laracms\Listeners\UserEventSubscriber@onVideoSaved'
         );
 
     }

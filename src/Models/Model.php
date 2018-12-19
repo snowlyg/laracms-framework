@@ -13,11 +13,11 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Models;
+namespace 569616226\Laracms\Models;
 
 use Illuminate\Database\Eloquent\Model as EloquentModel;
-use Wanglelecc\Laracms\Models\Traits\WithOrderHelper;
-use Wanglelecc\Laracms\Models\Traits\WithMultipleFilesTraits;
+use 569616226\Laracms\Models\Traits\WithOrderHelper;
+use 569616226\Laracms\Models\Traits\WithMultipleFilesTraits;
 
 class Model extends EloquentModel
 {

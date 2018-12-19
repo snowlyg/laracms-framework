@@ -13,9 +13,9 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Transformers;
+namespace 569616226\Laracms\Transformers;
 
-use Wanglelecc\Laracms\Models\User;
+use 569616226\Laracms\Models\User;
 use League\Fractal\TransformerAbstract;
 
 class UserTransformer extends TransformerAbstract

@@ -13,19 +13,19 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Models\Traits;
+namespace 569616226\Laracms\Models\Traits;
 
 use Carbon\Carbon;
 use Cache;
 use DB;
-use Wanglelecc\Laracms\Models\Category;
+use 569616226\Laracms\Models\Category;
 use Illuminate\Support\Facades\Storage;
 
 /**
  * 模型公共功能方法
  *
  * Trait WithCommonHelper
- * @package Wanglelecc\Laracms\Models\Traits
+ * @package 569616226\Laracms\Models\Traits
  */
 trait WithCommonHelper
 {

@@ -13,11 +13,11 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Observers;
+namespace 569616226\Laracms\Observers;
 
 use Ip;
 use Request;
-use Wanglelecc\Laracms\Models\Form;
+use 569616226\Laracms\Models\Form;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -28,7 +28,7 @@ use Illuminate\Support\Facades\Auth;
  * 表单观察者
  *
  * Class LinkObserver
- * @package Wanglelecc\Laracms\Observers
+ * @package 569616226\Laracms\Observers
  */
 class FormObserver
 {

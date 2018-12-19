@@ -16,10 +16,10 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-use Wanglelecc\Laracms\Models\Article;
-use Wanglelecc\Laracms\Models\Category;
-use Wanglelecc\Laracms\Models\Page;
-use Wanglelecc\Laracms\Models\Navigation;
+use 569616226\Laracms\Models\Article;
+use 569616226\Laracms\Models\Category;
+use 569616226\Laracms\Models\Page;
+use 569616226\Laracms\Models\Navigation;
 
 
 class SeedCategoryAndArticleData extends Migration

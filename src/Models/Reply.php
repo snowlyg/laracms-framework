@@ -13,7 +13,7 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Models;
+namespace 569616226\Laracms\Models;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -22,7 +22,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * 回复模型
  *
  * Class Reply
- * @package Wanglelecc\Laracms\Models
+ * @package 569616226\Laracms\Models
  */
 class Reply extends Model
 {

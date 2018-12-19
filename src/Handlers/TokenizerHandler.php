@@ -13,7 +13,7 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Handlers;
+namespace 569616226\Laracms\Handlers;
 
 use Fukuball\Jieba\Jieba;
 use Fukuball\Jieba\Finalseg;
@@ -23,7 +23,7 @@ use TeamTNT\TNTSearch\Support\TokenizerInterface;
  * 全文索引集成中文分词服务
  *
  * Class TokenizerHandler
- * @package Wanglelecc\Laracms\Handlers
+ * @package 569616226\Laracms\Handlers
  */
 class TokenizerHandler implements TokenizerInterface
 {

@@ -13,9 +13,9 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Observers;
+namespace 569616226\Laracms\Observers;
 
-use Wanglelecc\Laracms\Models\Link;
+use 569616226\Laracms\Models\Link;
 
 // creating, created, updating, updated, saving,
 // saved,  deleting, deleted, restoring, restored
@@ -24,7 +24,7 @@ use Wanglelecc\Laracms\Models\Link;
  * 友情链接观察者
  *
  * Class LinkObserver
- * @package Wanglelecc\Laracms\Observers
+ * @package 569616226\Laracms\Observers
  */
 class LinkObserver
 {

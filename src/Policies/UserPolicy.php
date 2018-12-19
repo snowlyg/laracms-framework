@@ -13,16 +13,16 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Policies;
+namespace 569616226\Laracms\Policies;
 
-use Wanglelecc\Laracms\Models\User;
+use 569616226\Laracms\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 /**
  * 用户授权策略
  *
  * Class UserPolicy
- * @package Wanglelecc\Laracms\Policies
+ * @package 569616226\Laracms\Policies
  */
 class UserPolicy extends Policy
 {

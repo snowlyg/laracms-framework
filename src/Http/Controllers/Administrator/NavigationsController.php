@@ -13,19 +13,19 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
+namespace 569616226\Laracms\Http\Controllers\Administrator;
 
 use Illuminate\Http\Request;
-use Wanglelecc\Laracms\Http\Requests\Administrator\NavigationRequest;
+use 569616226\Laracms\Http\Requests\Administrator\NavigationRequest;
 use Illuminate\Support\Facades\View;
-use Wanglelecc\Laracms\Models\Navigation;
-use Wanglelecc\Laracms\Handlers\NavigationHandler;
+use 569616226\Laracms\Models\Navigation;
+use 569616226\Laracms\Handlers\NavigationHandler;
 
 /**
  * 导航控制器
  *
  * Class NavigationsController
- * @package Wanglelecc\Laracms\Http\Controllers\Administrator
+ * @package 569616226\Laracms\Http\Controllers\Administrator
  */
 class NavigationsController extends Controller
 {

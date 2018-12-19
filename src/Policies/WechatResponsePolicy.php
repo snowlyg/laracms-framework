@@ -13,16 +13,16 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Policies;
+namespace 569616226\Laracms\Policies;
 
-use Wanglelecc\Laracms\Models\User;
-use Wanglelecc\Laracms\Models\WechatResponse;
+use 569616226\Laracms\Models\User;
+use 569616226\Laracms\Models\WechatResponse;
 
 /**
  * 微信响应授权策略
  *
  * Class WechatResponsePolicy
- * @package Wanglelecc\Laracms\Policies
+ * @package 569616226\Laracms\Policies
  */
 class WechatResponsePolicy extends Policy
 {

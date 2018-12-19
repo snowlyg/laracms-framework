@@ -13,16 +13,16 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Console\Commands;
+namespace 569616226\Laracms\Console\Commands;
 
 use Illuminate\Console\Command;
-use Wanglelecc\Laracms\Models\Block;
+use 569616226\Laracms\Models\Block;
 
 /**
  * 将区块同步到数据库
  *
  * Class SyncBlock
- * @package Wanglelecc\Laracms\Console\Commands
+ * @package 569616226\Laracms\Console\Commands
  */
 class SyncBlock extends Command
 {

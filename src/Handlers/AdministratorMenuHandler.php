@@ -13,13 +13,13 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Handlers;
+namespace 569616226\Laracms\Handlers;
 
 /**
  * 后台菜单工具类
  *
  * Class AdministratorMenuHandler
- * @package Wanglelecc\Laracms\Handlers
+ * @package 569616226\Laracms\Handlers
  */
 class AdministratorMenuHandler
 {

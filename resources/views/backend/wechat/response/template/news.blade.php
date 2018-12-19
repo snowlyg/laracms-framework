@@ -5,7 +5,7 @@
     $category_name = $content->category_name ?? '';
     $limit = $content->limit ?? 8;
 
-    $categoryHandler = app(\Wanglelecc\Laracms\Handlers\CategoryHandler::class);
+    $categoryHandler = app(\569616226\Laracms\Handlers\CategoryHandler::class);
     $category = $categoryHandler->select($categoryHandler->getCategorys('article'));
 @endphp
 

@@ -1,11 +1,11 @@
 <?php
-namespace Wanglelecc\Laracms\Providers;
+namespace 569616226\Laracms\Providers;
 
 use Storage;
 use Illuminate\Support\ServiceProvider;
 use League\Flysystem\Filesystem;
 use MicrosoftAzure\Storage\Blob\BlobRestProxy;
-use Wanglelecc\Laracms\Adapter\AzureBlobStorageAdapter;
+use 569616226\Laracms\Adapter\AzureBlobStorageAdapter;
 
 class AzureStorageServiceProvider extends ServiceProvider
 {

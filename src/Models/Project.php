@@ -1,6 +1,6 @@
 <?php
 
-namespace Wanglelecc\Laracms\Models;
+namespace 569616226\Laracms\Models;
 
 class Project extends Model
 {

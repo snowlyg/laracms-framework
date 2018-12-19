@@ -13,13 +13,13 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Models;
+namespace 569616226\Laracms\Models;
 
 /**
  * 区块模型
  *
  * Class Block
- * @package Wanglelecc\Laracms\Models
+ * @package 569616226\Laracms\Models
  */
 class Block extends Model
 {

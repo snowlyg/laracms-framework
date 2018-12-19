@@ -13,9 +13,9 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Transformers;
+namespace 569616226\Laracms\Transformers;
 
-use Wanglelecc\Laracms\Models\Article;
+use 569616226\Laracms\Models\Article;
 use League\Fractal\TransformerAbstract;
 
 class ArticleTransformer extends TransformerAbstract

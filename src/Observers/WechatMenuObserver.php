@@ -13,9 +13,9 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Observers;
+namespace 569616226\Laracms\Observers;
 
-use Wanglelecc\Laracms\Models\WechatMenu;
+use 569616226\Laracms\Models\WechatMenu;
 
 // creating, created, updating, updated, saving,
 // saved,  deleting, deleted, restoring, restored
@@ -24,7 +24,7 @@ use Wanglelecc\Laracms\Models\WechatMenu;
  * 微信菜单观察者
  *
  * Class WechatMenuObserver
- * @package Wanglelecc\Laracms\Observers
+ * @package 569616226\Laracms\Observers
  */
 class WechatMenuObserver
 {

@@ -13,9 +13,9 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Transformers;
+namespace 569616226\Laracms\Transformers;
 
-use Wanglelecc\Laracms\Models\Block;
+use 569616226\Laracms\Models\Block;
 use League\Fractal\TransformerAbstract;
 
 class BlockTransformer extends TransformerAbstract

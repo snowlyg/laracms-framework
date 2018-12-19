@@ -13,16 +13,16 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Handlers;
+namespace 569616226\Laracms\Handlers;
 
-use Wanglelecc\Laracms\Http\Requests\Request;
-use Wanglelecc\Laracms\Models\WechatMenu;
+use 569616226\Laracms\Http\Requests\Request;
+use 569616226\Laracms\Models\WechatMenu;
 
 /**
  * 微信菜单工具类
  *
  * Class WechatMenuHandler
- * @package Wanglelecc\Laracms\Handlers
+ * @package 569616226\Laracms\Handlers
  */
 class WechatMenuHandler
 {

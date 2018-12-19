@@ -13,14 +13,14 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers;
+namespace 569616226\Laracms\Http\Controllers;
 
 use Auth;
 use Hash;
-use Wanglelecc\Laracms\Models\User;
+use 569616226\Laracms\Models\User;
 use Illuminate\Http\Request;
-use Wanglelecc\Laracms\Handlers\UploadHandler;
-use Wanglelecc\Laracms\Http\Requests\UserRequest;
+use 569616226\Laracms\Handlers\UploadHandler;
+use 569616226\Laracms\Http\Requests\UserRequest;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 
@@ -28,7 +28,7 @@ use Illuminate\Validation\ValidationException;
  * 前台用户控制器
  *
  * Class UserController
- * @package Wanglelecc\Laracms\Http\Controllers
+ * @package 569616226\Laracms\Http\Controllers
  */
 class UserController extends Controller
 {

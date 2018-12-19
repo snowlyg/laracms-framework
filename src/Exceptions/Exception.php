@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Wanglelecc\Laracms\Exceptions;
+namespace 569616226\Laracms\Exceptions;
 
 class Exception extends \Exception
 {

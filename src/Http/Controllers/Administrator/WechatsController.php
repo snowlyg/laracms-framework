@@ -13,17 +13,17 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
+namespace 569616226\Laracms\Http\Controllers\Administrator;
 
-use Wanglelecc\Laracms\Models\Wechat;
+use 569616226\Laracms\Models\Wechat;
 use Illuminate\Http\Request;
-use Wanglelecc\Laracms\Http\Requests\Administrator\WechatRequest;
+use 569616226\Laracms\Http\Requests\Administrator\WechatRequest;
 
 /**
  * 微信公众号管理控制器
  *
  * Class WechatsController
- * @package Wanglelecc\Laracms\Http\Controllers\Administrator
+ * @package 569616226\Laracms\Http\Controllers\Administrator
  */
 class WechatsController extends Controller
 {

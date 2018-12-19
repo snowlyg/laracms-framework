@@ -13,17 +13,17 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers;
+namespace 569616226\Laracms\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Wanglelecc\Laracms\Models\Form;
-use Wanglelecc\Laracms\Http\Requests\FormRequest;
+use 569616226\Laracms\Models\Form;
+use 569616226\Laracms\Http\Requests\FormRequest;
 
 /**
  * 表单制器
  *
  * Class PageController
- * @package Wanglelecc\Laracms\Http\Controllers
+ * @package 569616226\Laracms\Http\Controllers
  */
 class FormController extends Controller
 {

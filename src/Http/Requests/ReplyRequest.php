@@ -13,7 +13,7 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Requests;
+namespace 569616226\Laracms\Http\Requests;
 
 class ReplyRequest extends Request
 {

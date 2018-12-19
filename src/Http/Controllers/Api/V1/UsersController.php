@@ -13,19 +13,19 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers\Api\V1;
+namespace 569616226\Laracms\Http\Controllers\Api\V1;
 
-use Wanglelecc\Laracms\Models\User;
+use 569616226\Laracms\Models\User;
 use Illuminate\Http\Request;
-use Wanglelecc\Laracms\Http\Requests\Api\V1\UserRequest;
-use Wanglelecc\Laracms\Http\Controllers\Api\Controller;
-use Wanglelecc\Laracms\Transformers\UserTransformer;
+use 569616226\Laracms\Http\Requests\Api\V1\UserRequest;
+use 569616226\Laracms\Http\Controllers\Api\Controller;
+use 569616226\Laracms\Transformers\UserTransformer;
 
 /**
  * 用户控制器
  *
  * Class UsersController
- * @package Wanglelecc\Laracms\Http\Controllers\Api\V1
+ * @package 569616226\Laracms\Http\Controllers\Api\V1
  */
 class UsersController extends Controller
 {

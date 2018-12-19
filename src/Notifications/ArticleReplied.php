@@ -13,14 +13,14 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Notifications;
+namespace 569616226\Laracms\Notifications;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Messages\DatabaseMessage;
-use Wanglelecc\Laracms\Models\Reply;
+use 569616226\Laracms\Models\Reply;
 
 class ArticleReplied extends Notification
 {

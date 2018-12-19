@@ -13,7 +13,7 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Jobs;
+namespace 569616226\Laracms\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Queue\SerializesModels;
@@ -21,8 +21,8 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 
-//use Wanglelecc\Laracms\Models\Topic;
-use Wanglelecc\Laracms\Handlers\SlugTranslateHandler;
+//use 569616226\Laracms\Models\Topic;
+use 569616226\Laracms\Handlers\SlugTranslateHandler;
 
 class TranslateSlug implements ShouldQueue
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Wanglelecc\Laracms\Http\Controllers;
+namespace 569616226\Laracms\Http\Controllers;
 
-use Wanglelecc\Laracms\Models\Project;
+use 569616226\Laracms\Models\Project;
 use Illuminate\Http\Request;
-use Wanglelecc\Laracms\Http\Controllers\Controller;
-use Wanglelecc\Laracms\Http\Requests\ProjectRequest;
+use 569616226\Laracms\Http\Controllers\Controller;
+use 569616226\Laracms\Http\Requests\ProjectRequest;
 
 class ProjectsController extends Controller
 {

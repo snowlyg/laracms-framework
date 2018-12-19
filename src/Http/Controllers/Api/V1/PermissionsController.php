@@ -13,17 +13,17 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers\Api\V1;
+namespace 569616226\Laracms\Http\Controllers\Api\V1;
 
 use Illuminate\Http\Request;
-use Wanglelecc\Laracms\Http\Controllers\Api\Controller;
-use Wanglelecc\Laracms\Transformers\PermissionTransformer;
+use 569616226\Laracms\Http\Controllers\Api\Controller;
+use 569616226\Laracms\Transformers\PermissionTransformer;
 
 /**
  * 权限控制器
  *
  * Class PermissionsController
- * @package Wanglelecc\Laracms\Http\Controllers\Api\V1
+ * @package 569616226\Laracms\Http\Controllers\Api\V1
  */
 class PermissionsController extends Controller
 {

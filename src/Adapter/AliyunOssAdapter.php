@@ -1,6 +1,6 @@
 <?php
 
-namespace Wanglelecc\Laracms\Adapter;
+namespace 569616226\Laracms\Adapter;
 
 use ApolloPY\Flysystem\AliyunOss\AliyunOssAdapter as AliyunOssAdapterBase;
 

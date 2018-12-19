@@ -13,9 +13,9 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Observers;
+namespace 569616226\Laracms\Observers;
 
-use Wanglelecc\Laracms\Models\Article;
+use 569616226\Laracms\Models\Article;
 use Illuminate\Support\Facades\Auth;
 
 // creating, created, updating, updated, saving,
@@ -25,7 +25,7 @@ use Illuminate\Support\Facades\Auth;
  * 文章观察者
  *
  * Class ArticleObserver
- * @package Wanglelecc\Laracms\Observers
+ * @package 569616226\Laracms\Observers
  */
 class ArticleObserver
 {

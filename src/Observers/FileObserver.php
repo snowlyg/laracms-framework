@@ -13,9 +13,9 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Observers;
+namespace 569616226\Laracms\Observers;
 
-use Wanglelecc\Laracms\Models\File;
+use 569616226\Laracms\Models\File;
 use Illuminate\Support\Facades\Auth;
 
 // creating, created, updating, updated, saving,
@@ -25,7 +25,7 @@ use Illuminate\Support\Facades\Auth;
  * 文件观察者
  *
  * Class FileObserver
- * @package Wanglelecc\Laracms\Observers
+ * @package 569616226\Laracms\Observers
  */
 class FileObserver
 {

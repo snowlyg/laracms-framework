@@ -13,21 +13,21 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers;
+namespace 569616226\Laracms\Http\Controllers;
 
 use Auth;
 use Illuminate\Http\Request;
-use Wanglelecc\Laracms\Handlers\UploadHandler;
-use Wanglelecc\Laracms\Models\Article;
-use Wanglelecc\Laracms\Models\MultipleFile;
-use Wanglelecc\Laracms\Models\File;
+use 569616226\Laracms\Handlers\UploadHandler;
+use 569616226\Laracms\Models\Article;
+use 569616226\Laracms\Models\MultipleFile;
+use 569616226\Laracms\Models\File;
 use Vod\Request\V20170321 as Vod;
 
 /**
  * 文件上传控制器
  *
  * Class UploadController
- * @package Wanglelecc\Laracms\Http\Controllers
+ * @package 569616226\Laracms\Http\Controllers
  */
 class UploadController extends Controller
 {

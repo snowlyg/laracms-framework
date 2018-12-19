@@ -13,7 +13,7 @@
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Transformers;
+namespace 569616226\Laracms\Transformers;
 
 use Spatie\Permission\Models\Role;
 use League\Fractal\TransformerAbstract;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Wanglelecc\Laracms\Observers;
+namespace 569616226\Laracms\Observers;
 
-use Wanglelecc\Laracms\Models\Project;
-use Wanglelecc\Laracms\Handlers\SlugTranslateHandler;
-use Wanglelecc\Laracms\Jobs\TranslateSlug;
+use 569616226\Laracms\Models\Project;
+use 569616226\Laracms\Handlers\SlugTranslateHandler;
+use 569616226\Laracms\Jobs\TranslateSlug;
 
 // creating, created, updating, updated, saving,
 // saved,  deleting, deleted, restoring, restored
