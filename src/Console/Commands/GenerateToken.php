@@ -4,25 +4,25 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    snowlyg <snowlyg@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/snowlyg/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Console\Commands;
+namespace snowlyg\Laracms\Console\Commands;
 
 use Illuminate\Console\Command;
-use Wanglelecc\Laracms\Models\User;
+use snowlyg\Laracms\Models\User;
 
 /**
  * 调试 API 辅助工具 - 快速生成用户 Token
  *
  * Class GenerateToken
- * @package Wanglelecc\Laracms\Console\Commands
+ * @package snowlyg\Laracms\Console\Commands
  */
 class GenerateToken extends Command
 {

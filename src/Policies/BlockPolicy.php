@@ -4,25 +4,25 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    snowlyg <snowlyg@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/snowlyg/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Policies;
+namespace snowlyg\Laracms\Policies;
 
-use Wanglelecc\Laracms\Models\User;
-use Wanglelecc\Laracms\Models\Block;
+use snowlyg\Laracms\Models\User;
+use snowlyg\Laracms\Models\Block;
 
 /**
  * 区块授权策略
  *
  * Class BlockPolicy
- * @package Wanglelecc\Laracms\Policies
+ * @package snowlyg\Laracms\Policies
  */
 class BlockPolicy extends Policy
 {

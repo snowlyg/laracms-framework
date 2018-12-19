@@ -4,27 +4,27 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    snowlyg <snowlyg@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/snowlyg/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Handlers;
+namespace snowlyg\Laracms\Handlers;
 
 use Image;
 use Illuminate\HTTP\File;
 use Illuminate\Support\Facades\Storage;
-use Wanglelecc\Laracms\Models\File as FileModel;
+use snowlyg\Laracms\Models\File as FileModel;
 
 /**
  * 文件上传工具类
  *
  * Class UploadHandler
- * @package Wanglelecc\Laracms\Handlers
+ * @package snowlyg\Laracms\Handlers
  */
 class UploadHandler
 {

@@ -4,11 +4,11 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    snowlyg <snowlyg@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/snowlyg/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
@@ -16,10 +16,10 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-use Wanglelecc\Laracms\Models\File;
-use Wanglelecc\Laracms\Models\Slide;
-use Wanglelecc\Laracms\Models\Block;
-use Wanglelecc\Laracms\Models\User;
+use snowlyg\Laracms\Models\File;
+use snowlyg\Laracms\Models\Slide;
+use snowlyg\Laracms\Models\Block;
+use snowlyg\Laracms\Models\User;
 
 
 class SeedSlideAndBlockAndFilesData extends Migration

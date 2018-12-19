@@ -4,27 +4,27 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    snowlyg <snowlyg@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/snowlyg/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
+namespace snowlyg\Laracms\Http\Controllers\Administrator;
 
-use Wanglelecc\Laracms\Models\Wechat;
-use Wanglelecc\Laracms\Models\WechatResponse;
+use snowlyg\Laracms\Models\Wechat;
+use snowlyg\Laracms\Models\WechatResponse;
 use Illuminate\Http\Request;
-use Wanglelecc\Laracms\Http\Requests\Administrator\WechatResponseRequest;
+use snowlyg\Laracms\Http\Requests\Administrator\WechatResponseRequest;
 
 /**
  * 微信响应控制器
  *
  * Class WechatResponseController
- * @package Wanglelecc\Laracms\Http\Controllers\Administrator
+ * @package snowlyg\Laracms\Http\Controllers\Administrator
  */
 class WechatResponseController extends Controller
 {

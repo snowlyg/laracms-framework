@@ -4,27 +4,27 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    snowlyg <snowlyg@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/snowlyg/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
+namespace snowlyg\Laracms\Http\Controllers\Administrator;
 
-use Wanglelecc\Laracms\Http\Requests\Administrator\CategoryRequest;
-use Wanglelecc\Laracms\Models\Category;
-use Wanglelecc\Laracms\Handlers\CategoryHandler;
+use snowlyg\Laracms\Http\Requests\Administrator\CategoryRequest;
+use snowlyg\Laracms\Models\Category;
+use snowlyg\Laracms\Handlers\CategoryHandler;
 use Illuminate\Http\Request;
 
 /**
  * 分类控制器
  *
  * Class CategorysController
- * @package Wanglelecc\Laracms\Http\Controllers\Administrator
+ * @package snowlyg\Laracms\Http\Controllers\Administrator
  */
 class CategorysController extends Controller
 {

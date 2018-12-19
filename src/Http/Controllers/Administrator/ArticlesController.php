@@ -4,30 +4,30 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    snowlyg <snowlyg@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/snowlyg/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
+namespace snowlyg\Laracms\Http\Controllers\Administrator;
 
 use DB;
-use Wanglelecc\Laracms\Models\Article;
+use snowlyg\Laracms\Models\Article;
 use Illuminate\Http\Request;
-use Wanglelecc\Laracms\Http\Requests\Administrator\ArticleRequest;
-use Wanglelecc\Laracms\Handlers\CategoryHandler;
-use Wanglelecc\Laracms\Models\Category;
-use Wanglelecc\Laracms\Models\MultipleFile;
+use snowlyg\Laracms\Http\Requests\Administrator\ArticleRequest;
+use snowlyg\Laracms\Handlers\CategoryHandler;
+use snowlyg\Laracms\Models\Category;
+use snowlyg\Laracms\Models\MultipleFile;
 
 /**
  * 后台文章管理控制器
  *
  * Class ArticlesController
- * @package Wanglelecc\Laracms\Http\Controllers\Administrator
+ * @package snowlyg\Laracms\Http\Controllers\Administrator
  */
 class ArticlesController extends Controller
 {

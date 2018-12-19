@@ -4,29 +4,29 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    snowlyg <snowlyg@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/snowlyg/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Handlers;
-use Wanglelecc\Laracms\Models\Article;
-use Wanglelecc\Laracms\Models\Category;
-use Wanglelecc\Laracms\Models\Block;
-use Wanglelecc\Laracms\Models\Link;
-use Wanglelecc\Laracms\Models\Page;
-use Wanglelecc\Laracms\Models\Slide;
-use Wanglelecc\Laracms\Handlers\CategoryHandler;
+namespace snowlyg\Laracms\Handlers;
+use snowlyg\Laracms\Models\Article;
+use snowlyg\Laracms\Models\Category;
+use snowlyg\Laracms\Models\Block;
+use snowlyg\Laracms\Models\Link;
+use snowlyg\Laracms\Models\Page;
+use snowlyg\Laracms\Models\Slide;
+use snowlyg\Laracms\Handlers\CategoryHandler;
 
 /**
  * 区块工具类
  *
  * Class BlockHandler
- * @package Wanglelecc\Laracms\Handlers
+ * @package snowlyg\Laracms\Handlers
  */
 class BlockHandler
 {

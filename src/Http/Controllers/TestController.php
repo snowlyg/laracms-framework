@@ -4,16 +4,16 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    snowlyg <snowlyg@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/snowlyg/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers;
+namespace snowlyg\Laracms\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Log;
@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\Redis;
  * 微信控制器
  *
  * Class WeChatController
- * @package Wanglelecc\Laracms\Http\Controllers
+ * @package snowlyg\Laracms\Http\Controllers
  */
 class TestController extends Controller
 {

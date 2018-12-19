@@ -1,6 +1,6 @@
 <?php
 
-namespace Wanglelecc\Laracms\Providers;
+namespace snowlyg\Laracms\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,25 +13,25 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-		 \Wanglelecc\Laracms\Models\WechatResponse::class                  => \Wanglelecc\Laracms\Policies\WechatResponsePolicy::class,
-		 \Wanglelecc\Laracms\Models\WechatMenu::class                      => \Wanglelecc\Laracms\Policies\WechatMenuPolicy::class,
-		 \Wanglelecc\Laracms\Models\Wechat::class                          => \Wanglelecc\Laracms\Policies\WechatPolicy::class,
-		 \Wanglelecc\Laracms\Models\Article::class                         => \Wanglelecc\Laracms\Policies\ArticlePolicy::class,
-		 \Wanglelecc\Laracms\Models\Block::class                           => \Wanglelecc\Laracms\Policies\BlockPolicy::class,
-		 \Wanglelecc\Laracms\Models\Link::class                            => \Wanglelecc\Laracms\Policies\LinkPolicy::class,
-		 \Wanglelecc\Laracms\Models\Project::class                         => \Wanglelecc\Laracms\Policies\ProjectPolicy::class,
-		 \Wanglelecc\Laracms\Models\Slide::class                           => \Wanglelecc\Laracms\Policies\SlidePolicy::class,
-		 \Wanglelecc\Laracms\Models\Category::class                        => \Wanglelecc\Laracms\Policies\CategoryPolicy::class,
-		 \Wanglelecc\Laracms\Models\Navigation::class                      => \Wanglelecc\Laracms\Policies\NavigationPolicy::class,
-		 \Wanglelecc\Laracms\Models\File::class                            => \Wanglelecc\Laracms\Policies\FilePolicy::class,
-		 \Wanglelecc\Laracms\Models\Setting::class                         => \Wanglelecc\Laracms\Policies\SettingPolicy::class,
-         \Wanglelecc\Laracms\Models\User::class                            => \Wanglelecc\Laracms\Policies\UserPolicy::class,
-         \Wanglelecc\Laracms\Models\Page::class                            => \Wanglelecc\Laracms\Policies\PagePolicy::class,
-         \Wanglelecc\Laracms\Models\Reply::class                           => \Wanglelecc\Laracms\Policies\ReplyPolicy::class,
-         \Wanglelecc\Laracms\Models\Form::class                            => \Wanglelecc\Laracms\Policies\FormPolicy::class,
+		 \snowlyg\Laracms\Models\WechatResponse::class                  => \snowlyg\Laracms\Policies\WechatResponsePolicy::class,
+		 \snowlyg\Laracms\Models\WechatMenu::class                      => \snowlyg\Laracms\Policies\WechatMenuPolicy::class,
+		 \snowlyg\Laracms\Models\Wechat::class                          => \snowlyg\Laracms\Policies\WechatPolicy::class,
+		 \snowlyg\Laracms\Models\Article::class                         => \snowlyg\Laracms\Policies\ArticlePolicy::class,
+		 \snowlyg\Laracms\Models\Block::class                           => \snowlyg\Laracms\Policies\BlockPolicy::class,
+		 \snowlyg\Laracms\Models\Link::class                            => \snowlyg\Laracms\Policies\LinkPolicy::class,
+		 \snowlyg\Laracms\Models\Project::class                         => \snowlyg\Laracms\Policies\ProjectPolicy::class,
+		 \snowlyg\Laracms\Models\Slide::class                           => \snowlyg\Laracms\Policies\SlidePolicy::class,
+		 \snowlyg\Laracms\Models\Category::class                        => \snowlyg\Laracms\Policies\CategoryPolicy::class,
+		 \snowlyg\Laracms\Models\Navigation::class                      => \snowlyg\Laracms\Policies\NavigationPolicy::class,
+		 \snowlyg\Laracms\Models\File::class                            => \snowlyg\Laracms\Policies\FilePolicy::class,
+		 \snowlyg\Laracms\Models\Setting::class                         => \snowlyg\Laracms\Policies\SettingPolicy::class,
+         \snowlyg\Laracms\Models\User::class                            => \snowlyg\Laracms\Policies\UserPolicy::class,
+         \snowlyg\Laracms\Models\Page::class                            => \snowlyg\Laracms\Policies\PagePolicy::class,
+         \snowlyg\Laracms\Models\Reply::class                           => \snowlyg\Laracms\Policies\ReplyPolicy::class,
+         \snowlyg\Laracms\Models\Form::class                            => \snowlyg\Laracms\Policies\FormPolicy::class,
 
-         \Spatie\Permission\Models\Role::class                             => \Wanglelecc\Laracms\Policies\RolePolicy::class,
-         \Spatie\Permission\Models\Permission::class                       => \Wanglelecc\Laracms\Policies\PermissionPolicy::class,
+         \Spatie\Permission\Models\Role::class                             => \snowlyg\Laracms\Policies\RolePolicy::class,
+         \Spatie\Permission\Models\Permission::class                       => \snowlyg\Laracms\Policies\PermissionPolicy::class,
     ];
 
     /**

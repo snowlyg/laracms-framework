@@ -1,6 +1,6 @@
 <?php
 
-namespace Wanglelecc\Laracms\Providers;
+namespace snowlyg\Laracms\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -14,7 +14,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'Wanglelecc\Laracms\Http\Controllers';
+    protected $namespace = 'snowlyg\Laracms\Http\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.
@@ -23,10 +23,10 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Route::bind('safePage',function($value){ return \Wanglelecc\Laracms\Models\Page::show($value); });
-        Route::bind('safeArticle',function($value){ return \Wanglelecc\Laracms\Models\Article::show( $value); });
-        Route::bind('articleCategory',function($value){ return \Wanglelecc\Laracms\Models\Category::show($value, 'article'); });
-        Route::bind('safeWechat',function($value){ return \Wanglelecc\Laracms\Models\Wechat::where('object_id', $value)->first(); });
+        Route::bind('safePage',function($value){ return \snowlyg\Laracms\Models\Page::show($value); });
+        Route::bind('safeArticle',function($value){ return \snowlyg\Laracms\Models\Article::show( $value); });
+        Route::bind('articleCategory',function($value){ return \snowlyg\Laracms\Models\Category::show($value, 'article'); });
+        Route::bind('safeWechat',function($value){ return \snowlyg\Laracms\Models\Wechat::where('object_id', $value)->first(); });
 
         parent::boot();
     }

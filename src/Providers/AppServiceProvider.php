@@ -4,22 +4,22 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    snowlyg <snowlyg@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/snowlyg/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Providers;
+namespace snowlyg\Laracms\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
-use Wanglelecc\Laracms\Models\Setting;
-use Wanglelecc\Laracms\Handlers\AdministratorMenuHandler;
+use snowlyg\Laracms\Models\Setting;
+use snowlyg\Laracms\Handlers\AdministratorMenuHandler;
 
 
 class AppServiceProvider extends ServiceProvider
@@ -32,23 +32,23 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
 	{
 	    // 注册模型观察者
-		\Wanglelecc\Laracms\Models\User::observe(                  \Wanglelecc\Laracms\Observers\UserObserver::class);
-		\Wanglelecc\Laracms\Models\WechatMenu::observe(            \Wanglelecc\Laracms\Observers\WechatMenuObserver::class);
-		\Wanglelecc\Laracms\Models\Wechat::observe(                \Wanglelecc\Laracms\Observers\WechatObserver::class);
-		\Wanglelecc\Laracms\Models\Block::observe(                 \Wanglelecc\Laracms\Observers\BlockObserver::class);
-		\Wanglelecc\Laracms\Models\Link::observe(                  \Wanglelecc\Laracms\Observers\LinkObserver::class);
-		\Wanglelecc\Laracms\Models\Project::observe(               \Wanglelecc\Laracms\Observers\ProjectObserver::class);
-		\Wanglelecc\Laracms\Models\Category::observe(              \Wanglelecc\Laracms\Observers\CategoryObserver::class);
-		\Wanglelecc\Laracms\Models\Navigation::observe(            \Wanglelecc\Laracms\Observers\NavigationObserver::class);
-		\Wanglelecc\Laracms\Models\Page::observe(                  \Wanglelecc\Laracms\Observers\PageObserver::class);
-		\Wanglelecc\Laracms\Models\Article::observe(               \Wanglelecc\Laracms\Observers\ArticleObserver::class);
-		\Wanglelecc\Laracms\Models\Slide::observe(                 \Wanglelecc\Laracms\Observers\SlideObserver::class);
-		\Wanglelecc\Laracms\Models\File::observe(                  \Wanglelecc\Laracms\Observers\FileObserver::class);
-		\Wanglelecc\Laracms\Models\WechatResponse::observe(        \Wanglelecc\Laracms\Observers\WechatResponseObserver::class);
-		\Wanglelecc\Laracms\Models\Reply::observe(                 \Wanglelecc\Laracms\Observers\ReplyObserver::class);
-		\Wanglelecc\Laracms\Models\Log::observe(                   \Wanglelecc\Laracms\Observers\LogObserver::class);
-		\Wanglelecc\Laracms\Models\MultipleFile::observe(          \Wanglelecc\Laracms\Observers\MultipleFileObserver::class);
-		\Wanglelecc\Laracms\Models\Form::observe(                  \Wanglelecc\Laracms\Observers\FormObserver::class);
+		\snowlyg\Laracms\Models\User::observe(                  \snowlyg\Laracms\Observers\UserObserver::class);
+		\snowlyg\Laracms\Models\WechatMenu::observe(            \snowlyg\Laracms\Observers\WechatMenuObserver::class);
+		\snowlyg\Laracms\Models\Wechat::observe(                \snowlyg\Laracms\Observers\WechatObserver::class);
+		\snowlyg\Laracms\Models\Block::observe(                 \snowlyg\Laracms\Observers\BlockObserver::class);
+		\snowlyg\Laracms\Models\Link::observe(                  \snowlyg\Laracms\Observers\LinkObserver::class);
+		\snowlyg\Laracms\Models\Project::observe(               \snowlyg\Laracms\Observers\ProjectObserver::class);
+		\snowlyg\Laracms\Models\Category::observe(              \snowlyg\Laracms\Observers\CategoryObserver::class);
+		\snowlyg\Laracms\Models\Navigation::observe(            \snowlyg\Laracms\Observers\NavigationObserver::class);
+		\snowlyg\Laracms\Models\Page::observe(                  \snowlyg\Laracms\Observers\PageObserver::class);
+		\snowlyg\Laracms\Models\Article::observe(               \snowlyg\Laracms\Observers\ArticleObserver::class);
+		\snowlyg\Laracms\Models\Slide::observe(                 \snowlyg\Laracms\Observers\SlideObserver::class);
+		\snowlyg\Laracms\Models\File::observe(                  \snowlyg\Laracms\Observers\FileObserver::class);
+		\snowlyg\Laracms\Models\WechatResponse::observe(        \snowlyg\Laracms\Observers\WechatResponseObserver::class);
+		\snowlyg\Laracms\Models\Reply::observe(                 \snowlyg\Laracms\Observers\ReplyObserver::class);
+		\snowlyg\Laracms\Models\Log::observe(                   \snowlyg\Laracms\Observers\LogObserver::class);
+		\snowlyg\Laracms\Models\MultipleFile::observe(          \snowlyg\Laracms\Observers\MultipleFileObserver::class);
+		\snowlyg\Laracms\Models\Form::observe(                  \snowlyg\Laracms\Observers\FormObserver::class);
 
         // 设置时区
         \Carbon\Carbon::setLocale('zh');

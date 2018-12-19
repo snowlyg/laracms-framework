@@ -1,6 +1,6 @@
 <?php
 
-namespace Wanglelecc\Laracms\Http\Requests\Api\V1;
+namespace snowlyg\Laracms\Http\Requests\Api\V1;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Auth;

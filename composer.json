@@ -65,7 +65,7 @@
         "classmap": [
         ],
         "psr-4": {
-            "Wanglelecc\\Laracms\\": "src/"
+            "snowlyg\\Laracms\\": "src/"
         },
         "files": [
             "src/Support/Helpers.php"
@@ -86,15 +86,15 @@
     "extra": {
         "laravel" : {
             "providers" : [
-                "Wanglelecc\\Laracms\\Providers\\AliyunOssServiceProvider",
-                "Wanglelecc\\Laracms\\Providers\\AppServiceProvider",
-                "Wanglelecc\\Laracms\\Providers\\AuthServiceProvider",
-                "Wanglelecc\\Laracms\\Providers\\AzureStorageServiceProvider",
-                "Wanglelecc\\Laracms\\Providers\\EasySmsServiceProvider",
-                "Wanglelecc\\Laracms\\Providers\\EventServiceProvider",
-                "Wanglelecc\\Laracms\\Providers\\LaracmsServiceProvider",
-                "Wanglelecc\\Laracms\\Providers\\RouteServiceProvider",
-                "Wanglelecc\\Laracms\\Providers\\ScoutServiceProvider"
+                "snowlyg\\Laracms\\Providers\\AliyunOssServiceProvider",
+                "snowlyg\\Laracms\\Providers\\AppServiceProvider",
+                "snowlyg\\Laracms\\Providers\\AuthServiceProvider",
+                "snowlyg\\Laracms\\Providers\\AzureStorageServiceProvider",
+                "snowlyg\\Laracms\\Providers\\EasySmsServiceProvider",
+                "snowlyg\\Laracms\\Providers\\EventServiceProvider",
+                "snowlyg\\Laracms\\Providers\\LaracmsServiceProvider",
+                "snowlyg\\Laracms\\Providers\\RouteServiceProvider",
+                "snowlyg\\Laracms\\Providers\\ScoutServiceProvider"
             ]
         }
     }

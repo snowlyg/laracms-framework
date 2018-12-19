@@ -4,18 +4,18 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    snowlyg <snowlyg@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/snowlyg/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Observers;
+namespace snowlyg\Laracms\Observers;
 
-use Wanglelecc\Laracms\Models\Navigation;
+use snowlyg\Laracms\Models\Navigation;
 
 // creating, created, updating, updated, saving,
 // saved,  deleting, deleted, restoring, restored
@@ -24,7 +24,7 @@ use Wanglelecc\Laracms\Models\Navigation;
  * 导航观察者
  *
  * Class NavigationObserver
- * @package Wanglelecc\Laracms\Observers
+ * @package snowlyg\Laracms\Observers
  */
 class NavigationObserver
 {
@@ -53,7 +53,7 @@ class NavigationObserver
 
     // 更新url
     public function saved(Navigation $navigation){
-        $link = app(\Wanglelecc\Laracms\Handlers\NavigationHandler::class)->createUrl($navigation);
+        $link = app(\snowlyg\Laracms\Handlers\NavigationHandler::class)->createUrl($navigation);
         Navigation::where('id', $navigation->id)->update(['link'=>$link]);
     }
 

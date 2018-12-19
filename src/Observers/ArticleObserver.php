@@ -4,18 +4,18 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    snowlyg <snowlyg@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/snowlyg/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Observers;
+namespace snowlyg\Laracms\Observers;
 
-use Wanglelecc\Laracms\Models\Article;
+use snowlyg\Laracms\Models\Article;
 use Illuminate\Support\Facades\Auth;
 
 // creating, created, updating, updated, saving,
@@ -25,7 +25,7 @@ use Illuminate\Support\Facades\Auth;
  * 文章观察者
  *
  * Class ArticleObserver
- * @package Wanglelecc\Laracms\Observers
+ * @package snowlyg\Laracms\Observers
  */
 class ArticleObserver
 {
@@ -62,7 +62,7 @@ class ArticleObserver
 
     public function saved(Article $article){
         // 分发事件
-        $event_class_name = '\\Wanglelecc\\Laracms\\Events\\' . ucfirst($article->type) . 'SavedEvent';
+        $event_class_name = '\\snowlyg\\Laracms\\Events\\' . ucfirst($article->type) . 'SavedEvent';
         class_exists($event_class_name) && event(new $event_class_name($article));
     }
 

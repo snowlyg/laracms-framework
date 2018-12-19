@@ -4,20 +4,20 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    snowlyg <snowlyg@gmail.com>
  * @date      2018/09/25 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/snowlyg/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Observers;
+namespace snowlyg\Laracms\Observers;
 
 use Ip;
 use Request;
-use Wanglelecc\Laracms\Models\Form;
+use snowlyg\Laracms\Models\Form;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -28,7 +28,7 @@ use Illuminate\Support\Facades\Auth;
  * 表单观察者
  *
  * Class LinkObserver
- * @package Wanglelecc\Laracms\Observers
+ * @package snowlyg\Laracms\Observers
  */
 class FormObserver
 {

@@ -4,16 +4,16 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    snowlyg <snowlyg@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/snowlyg/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Listeners;
+namespace snowlyg\Laracms\Listeners;
 
 use Ip;
 use DB;
@@ -21,7 +21,7 @@ use Log;
 use Request;
 use Illuminate\Support\Carbon;
 use Vod\Request\V20170321 as Vod;
-use Wanglelecc\Laracms\Jobs\GetVodCoverURL;
+use snowlyg\Laracms\Jobs\GetVodCoverURL;
 
 
 class ArticleEventSubscriber
@@ -68,13 +68,13 @@ class ArticleEventSubscriber
     public function subscribe($events)
     {
         $events->listen(
-            'Wanglelecc\Laracms\ArticleSavedEvent',
-            'Wanglelecc\Laracms\Listeners\ArticleEventSubscriber@onArticleSaved'
+            'snowlyg\Laracms\ArticleSavedEvent',
+            'snowlyg\Laracms\Listeners\ArticleEventSubscriber@onArticleSaved'
         );
 
         $events->listen(
-            'Wanglelecc\Laracms\VideoSavedEvent',
-            'Wanglelecc\Laracms\Listeners\UserEventSubscriber@onVideoSaved'
+            'snowlyg\Laracms\VideoSavedEvent',
+            'snowlyg\Laracms\Listeners\UserEventSubscriber@onVideoSaved'
         );
 
     }

@@ -4,26 +4,26 @@
  *
  * @category  LaraCMS
  * @package   Laravel
- * @author    Wanglelecc <wanglelecc@gmail.com>
+ * @author    snowlyg <snowlyg@gmail.com>
  * @date      2018/06/06 09:08:00
  * @copyright Copyright 2018 LaraCMS
  * @license   https://opensource.org/licenses/MIT
- * @github    https://github.com/wanglelecc/laracms
+ * @github    https://github.com/snowlyg/laracms
  * @link      https://www.laracms.cn
  * @version   Release 1.0
  */
 
-namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
+namespace snowlyg\Laracms\Http\Controllers\Administrator;
 
-use Wanglelecc\Laracms\Models\Page;
+use snowlyg\Laracms\Models\Page;
 use Illuminate\Http\Request;
-use Wanglelecc\Laracms\Http\Requests\Administrator\PageRequest;
+use snowlyg\Laracms\Http\Requests\Administrator\PageRequest;
 
 /**
  * 页面控制器
  *
  * Class PagesController
- * @package Wanglelecc\Laracms\Http\Controllers\Administrator
+ * @package snowlyg\Laracms\Http\Controllers\Administrator
  */
 class PagesController extends Controller
 {

@@ -1,8 +1,8 @@
 <?php
 $header = <<<EOF
-This file is part of the wanglelecc/weather.
+This file is part of the snowlyg/weather.
 
-(c) wanglelecc <wanglelecc@gmail.com>
+(c) snowlyg <snowlyg@gmail.com>
 
 This source file is subject to the MIT license that is bundled.
 EOF;
