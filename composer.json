@@ -65,7 +65,7 @@
         "classmap": [
         ],
         "psr-4": {
-            "wanglelecc\\Laracms\\": "src/"
+            "569616226\\Laracms\\": "src/"
         },
         "files": [
             "src/Support/Helpers.php"
@@ -86,15 +86,15 @@
     "extra": {
         "laravel" : {
             "providers" : [
-                "wanglelecc\\Laracms\\Providers\\AliyunOssServiceProvider",
-                "wanglelecc\\Laracms\\Providers\\AppServiceProvider",
-                "wanglelecc\\Laracms\\Providers\\AuthServiceProvider",
-                "wanglelecc\\Laracms\\Providers\\AzureStorageServiceProvider",
-                "wanglelecc\\Laracms\\Providers\\EasySmsServiceProvider",
-                "wanglelecc\\Laracms\\Providers\\EventServiceProvider",
-                "wanglelecc\\Laracms\\Providers\\LaracmsServiceProvider",
-                "wanglelecc\\Laracms\\Providers\\RouteServiceProvider",
-                "wanglelecc\\Laracms\\Providers\\ScoutServiceProvider"
+                "569616226\\Laracms\\Providers\\AliyunOssServiceProvider",
+                "569616226\\Laracms\\Providers\\AppServiceProvider",
+                "569616226\\Laracms\\Providers\\AuthServiceProvider",
+                "569616226\\Laracms\\Providers\\AzureStorageServiceProvider",
+                "569616226\\Laracms\\Providers\\EasySmsServiceProvider",
+                "569616226\\Laracms\\Providers\\EventServiceProvider",
+                "569616226\\Laracms\\Providers\\LaracmsServiceProvider",
+                "569616226\\Laracms\\Providers\\RouteServiceProvider",
+                "569616226\\Laracms\\Providers\\ScoutServiceProvider"
             ]
         }
     }
