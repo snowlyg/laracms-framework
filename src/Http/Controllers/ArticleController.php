@@ -13,18 +13,18 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Controllers;
+namespace Wanglelecc\Laracms\Http\Controllers;
 
 use Illuminate\Http\Request;
-use 569616226\Laracms\Models\Article;
-use 569616226\Laracms\Models\Category;
-use 569616226\Laracms\Models\Navigation;
+use Wanglelecc\Laracms\Models\Article;
+use Wanglelecc\Laracms\Models\Category;
+use Wanglelecc\Laracms\Models\Navigation;
 
 /**
  * 文章控制器
  *
  * Class ArticleController
- * @package 569616226\Laracms\Http\Controllers
+ * @package Wanglelecc\Laracms\Http\Controllers
  */
 class ArticleController extends Controller
 {

@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace 569616226\Laracms\Exceptions;
+namespace Wanglelecc\Laracms\Exceptions;
 
 class HttpException extends Exception
 {

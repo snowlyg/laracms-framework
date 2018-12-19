@@ -13,10 +13,10 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Models;
+namespace Wanglelecc\Laracms\Models;
 
 use EasyWeChat\Factory;
-use 569616226\Laracms\Events\BehaviorLogEvent;
+use Wanglelecc\Laracms\Events\BehaviorLogEvent;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 
@@ -24,7 +24,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * 微信公众号模型
  *
  * Class Wechat
- * @package 569616226\Laracms\Models
+ * @package Wanglelecc\Laracms\Models
  */
 class Wechat extends Model
 {

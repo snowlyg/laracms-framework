@@ -1,6 +1,6 @@
 <?php
 
-namespace 569616226\Laracms\Http\Middleware;
+namespace Wanglelecc\Laracms\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

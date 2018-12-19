@@ -16,10 +16,10 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-use 569616226\Laracms\Models\File;
-use 569616226\Laracms\Models\Slide;
-use 569616226\Laracms\Models\Block;
-use 569616226\Laracms\Models\User;
+use Wanglelecc\Laracms\Models\File;
+use Wanglelecc\Laracms\Models\Slide;
+use Wanglelecc\Laracms\Models\Block;
+use Wanglelecc\Laracms\Models\User;
 
 
 class SeedSlideAndBlockAndFilesData extends Migration

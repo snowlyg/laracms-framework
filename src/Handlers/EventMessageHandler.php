@@ -13,19 +13,19 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Handlers;
+namespace Wanglelecc\Laracms\Handlers;
 
-use 569616226\Laracms\Http\Requests\Request;
-use 569616226\Laracms\Models\WechatMenu;
-use 569616226\Laracms\Models\WechatResponse;
+use Wanglelecc\Laracms\Http\Requests\Request;
+use Wanglelecc\Laracms\Models\WechatMenu;
+use Wanglelecc\Laracms\Models\WechatResponse;
 use EasyWeChat\Kernel\Contracts\EventHandlerInterface;
-use 569616226\Laracms\Models\Wechat;
+use Wanglelecc\Laracms\Models\Wechat;
 
 /**
  * 微信事件消息处理
  *
  * Class EventMessageHandler
- * @package 569616226\Laracms\Handlers
+ * @package Wanglelecc\Laracms\Handlers
  */
 class EventMessageHandler
 {

@@ -13,16 +13,16 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Policies;
+namespace Wanglelecc\Laracms\Policies;
 
-use 569616226\Laracms\Models\User;
+use Wanglelecc\Laracms\Models\User;
 use Spatie\Permission\Models\Permission;
 
 /**
  * 权限授权策略
  *
  * Class PermissionPolicy
- * @package 569616226\Laracms\Policies
+ * @package Wanglelecc\Laracms\Policies
  */
 class PermissionPolicy extends Policy
 {

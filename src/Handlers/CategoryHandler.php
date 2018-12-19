@@ -13,15 +13,15 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Handlers;
+namespace Wanglelecc\Laracms\Handlers;
 
-use 569616226\Laracms\Models\Category;
+use Wanglelecc\Laracms\Models\Category;
 
 /**
  * 分类处理工具类
  *
  * Class CategoryHandler
- * @package 569616226\Laracms\Handlers
+ * @package Wanglelecc\Laracms\Handlers
  */
 class CategoryHandler
 {

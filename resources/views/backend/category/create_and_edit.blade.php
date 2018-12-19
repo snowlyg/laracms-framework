@@ -14,7 +14,7 @@
 @section('content')
 
     @php
-        $categoryHandler = app(\569616226\Laracms\Handlers\CategoryHandler::class);
+        $categoryHandler = app(\Wanglelecc\Laracms\Handlers\CategoryHandler::class);
         $categoryItems = $categoryHandler->select($categoryHandler->getCategorys($type));
     @endphp
 

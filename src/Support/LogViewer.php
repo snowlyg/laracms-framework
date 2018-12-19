@@ -13,7 +13,7 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Support;
+namespace Wanglelecc\Laracms\Support;
 
 use Psr\Log\LogLevel;
 

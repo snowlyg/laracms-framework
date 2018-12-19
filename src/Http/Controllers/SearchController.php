@@ -13,19 +13,19 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Controllers;
+namespace Wanglelecc\Laracms\Http\Controllers;
 
 use Illuminate\Http\Request;
-use 569616226\Laracms\Models\Article;
+use Wanglelecc\Laracms\Models\Article;
 use TeamTNT\TNTSearch\Indexer\TNTIndexer;
 use TeamTNT\TNTSearch\TNTSearch;
-use 569616226\Laracms\Handlers\TokenizerHandler;
+use Wanglelecc\Laracms\Handlers\TokenizerHandler;
 
 /**
  * 前台搜索控制器
  *
  * Class SearchController
- * @package 569616226\Laracms\Http\Controllers
+ * @package Wanglelecc\Laracms\Http\Controllers
  */
 class SearchController extends Controller
 {

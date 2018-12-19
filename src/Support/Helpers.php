@@ -476,10 +476,10 @@ if( !function_exists("model_link") ){
 if(!function_exists("model_plural_name")){
     function model_plural_name($model)
     {
-        // 从实体中获取完整类名，例如：569616226\Laracms\Models\User
+        // 从实体中获取完整类名，例如：Wanglelecc\Laracms\Models\User
         $full_class_name = get_class($model);
 
-        // 获取基础类名，例如：传参 `569616226\Laracms\Models\User` 会得到 `User`
+        // 获取基础类名，例如：传参 `Wanglelecc\Laracms\Models\User` 会得到 `User`
         $class_name = class_basename($full_class_name);
 
         // 蛇形命名，例如：传参 `User`  会得到 `user`, `FooBar` 会得到 `foo_bar`
@@ -506,7 +506,7 @@ if( !function_exists("frontend_navigation") ){
      * @return mixed
      */
     function frontend_navigation($category = 'desktop'){
-        return $navigationHandler = app(\569616226\Laracms\Handlers\NavigationHandler::class)->frontend($category);
+        return $navigationHandler = app(\Wanglelecc\Laracms\Handlers\NavigationHandler::class)->frontend($category);
     }
 }
 
@@ -518,7 +518,7 @@ if( !function_exists("frontend_complete_navigation") ){
      * @return mixed
      */
     function frontend_complete_navigation($category = 'desktop'){
-        return $navigationHandler = app(\569616226\Laracms\Handlers\NavigationHandler::class)->completeFrontend($category);
+        return $navigationHandler = app(\Wanglelecc\Laracms\Handlers\NavigationHandler::class)->completeFrontend($category);
     }
 }
 
@@ -531,7 +531,7 @@ if( !function_exists("frontend_current_brother_and_child_navigation") ){
      * @return mixed
      */
     function frontend_current_brother_and_child_navigation($category = 'desktop', $showOneLevel = false){
-        return $navigationHandler = app(\569616226\Laracms\Handlers\NavigationHandler::class)->getCurrentBrothersAndChildNavigation($category, $showOneLevel);
+        return $navigationHandler = app(\Wanglelecc\Laracms\Handlers\NavigationHandler::class)->getCurrentBrothersAndChildNavigation($category, $showOneLevel);
     }
 }
 
@@ -543,7 +543,7 @@ if( !function_exists("frontend_current_child_navigations") ){
      * @return mixed
      */
     function frontend_current_child_navigations($category = 'desktop'){
-        return $navigationHandler = app(\569616226\Laracms\Handlers\NavigationHandler::class)->getCurrentChildNavigations($category);
+        return $navigationHandler = app(\Wanglelecc\Laracms\Handlers\NavigationHandler::class)->getCurrentChildNavigations($category);
     }
 }
 if( !function_exists("frontend_current_child_navigation") ){
@@ -554,7 +554,7 @@ if( !function_exists("frontend_current_child_navigation") ){
      * @return mixed
      */
     function frontend_current_child_navigation($category = 'desktop'){
-        return $navigationHandler = app(\569616226\Laracms\Handlers\NavigationHandler::class)->getCurrentChildNavigation($category);
+        return $navigationHandler = app(\Wanglelecc\Laracms\Handlers\NavigationHandler::class)->getCurrentChildNavigation($category);
     }
 }
 
@@ -566,7 +566,7 @@ if( !function_exists("frontend_current_navigation") ){
      * @return mixed
      */
     function frontend_current_navigation($category = 'desktop'){
-        return $navigationHandler = app(\569616226\Laracms\Handlers\NavigationHandler::class)->getCurrentNavigation($category);
+        return $navigationHandler = app(\Wanglelecc\Laracms\Handlers\NavigationHandler::class)->getCurrentNavigation($category);
     }
 }
 
@@ -577,7 +577,7 @@ if( !function_exists("breadcrumb") ){
      * @return mixed
      */
     function breadcrumb(){
-        return $navigationHandler = app(\569616226\Laracms\Handlers\NavigationHandler::class)->breadcrumb();
+        return $navigationHandler = app(\Wanglelecc\Laracms\Handlers\NavigationHandler::class)->breadcrumb();
     }
 }
 
@@ -598,7 +598,7 @@ if(!function_exists("get_block")){
             return $block;
         }
 
-        $block =  app(\569616226\Laracms\Handlers\BlockHandler::class)->getBlockData($object_id);
+        $block =  app(\Wanglelecc\Laracms\Handlers\BlockHandler::class)->getBlockData($object_id);
 
         if(\App::environment('production')){
             $expiredAt = now()->addMinutes(config('cache.expired.block', 10));
@@ -688,7 +688,7 @@ if( !function_exists("laracms_log") ){
      * @return mixed
      */
     function laracms_log($group, $type, $description, $model = null){
-        return \569616226\Laracms\Models\Log::create([
+        return \Wanglelecc\Laracms\Models\Log::create([
             'group'          => $group,
             'type'           => $type,
             'description'    => $description,

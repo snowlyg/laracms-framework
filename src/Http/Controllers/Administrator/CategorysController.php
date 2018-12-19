@@ -13,18 +13,18 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Controllers\Administrator;
+namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
 
-use 569616226\Laracms\Http\Requests\Administrator\CategoryRequest;
-use 569616226\Laracms\Models\Category;
-use 569616226\Laracms\Handlers\CategoryHandler;
+use Wanglelecc\Laracms\Http\Requests\Administrator\CategoryRequest;
+use Wanglelecc\Laracms\Models\Category;
+use Wanglelecc\Laracms\Handlers\CategoryHandler;
 use Illuminate\Http\Request;
 
 /**
  * 分类控制器
  *
  * Class CategorysController
- * @package 569616226\Laracms\Http\Controllers\Administrator
+ * @package Wanglelecc\Laracms\Http\Controllers\Administrator
  */
 class CategorysController extends Controller
 {

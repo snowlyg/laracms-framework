@@ -13,7 +13,7 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Controllers\Administrator;
+namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
 
 use Illuminate\Http\Request;
 use Spatie\Permission\Models\Role;
@@ -23,7 +23,7 @@ use Spatie\Permission\Models\Permission;
  * 角色控制器
  *
  * Class RolesController
- * @package 569616226\Laracms\Http\Controllers\Administrator
+ * @package Wanglelecc\Laracms\Http\Controllers\Administrator
  */
 class RolesController extends Controller
 {

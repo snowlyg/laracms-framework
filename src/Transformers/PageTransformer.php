@@ -13,9 +13,9 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Transformers;
+namespace Wanglelecc\Laracms\Transformers;
 
-use 569616226\Laracms\Models\Page;
+use Wanglelecc\Laracms\Models\Page;
 use League\Fractal\TransformerAbstract;
 
 class PageTransformer extends TransformerAbstract

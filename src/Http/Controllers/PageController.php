@@ -13,17 +13,17 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Controllers;
+namespace Wanglelecc\Laracms\Http\Controllers;
 
 use Illuminate\Http\Request;
-use 569616226\Laracms\Models\Page;
-use 569616226\Laracms\Models\Navigation;
+use Wanglelecc\Laracms\Models\Page;
+use Wanglelecc\Laracms\Models\Navigation;
 
 /**
  * 页面控制器
  *
  * Class PageController
- * @package 569616226\Laracms\Http\Controllers
+ * @package Wanglelecc\Laracms\Http\Controllers
  */
 class PageController extends Controller
 {

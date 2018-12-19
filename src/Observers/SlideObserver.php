@@ -13,9 +13,9 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Observers;
+namespace Wanglelecc\Laracms\Observers;
 
-use 569616226\Laracms\Models\Slide;
+use Wanglelecc\Laracms\Models\Slide;
 
 // creating, created, updating, updated, saving,
 // saved,  deleting, deleted, restoring, restored
@@ -24,7 +24,7 @@ use 569616226\Laracms\Models\Slide;
  * 幻灯观察者
  *
  * Class SlideObserver
- * @package 569616226\Laracms\Observers
+ * @package Wanglelecc\Laracms\Observers
  */
 class SlideObserver
 {

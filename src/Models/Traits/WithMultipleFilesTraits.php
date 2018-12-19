@@ -13,9 +13,9 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Models\Traits;
+namespace Wanglelecc\Laracms\Models\Traits;
 
-use 569616226\Laracms\Models\MultipleFile;
+use Wanglelecc\Laracms\Models\MultipleFile;
 
 trait WithMultipleFilesTraits{
 
@@ -26,7 +26,7 @@ trait WithMultipleFilesTraits{
      */
     public function multiple_files(){
 
-        $morphMany = $this->morphMany('569616226\Laracms\Models\MultipleFile', 'multiple_file_table');
+        $morphMany = $this->morphMany('Wanglelecc\Laracms\Models\MultipleFile', 'multiple_file_table');
 
         list($one, $caller) = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, 2);
 
@@ -103,7 +103,7 @@ trait WithMultipleFilesTraits{
      * @param $multipleFile
      * @param $field
      * @param $order
-     * @return \569616226\Laracms\Models\MultipleFile
+     * @return \Wanglelecc\Laracms\Models\MultipleFile
      */
     public function getStoredMultipleFile($multipleFile, $field, $order){
         return new MultipleFile([

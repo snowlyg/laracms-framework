@@ -13,7 +13,7 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Events;
+namespace Wanglelecc\Laracms\Events;
 
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Queue\SerializesModels;
@@ -23,7 +23,7 @@ use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-use 569616226\Laracms\Models\Article;
+use Wanglelecc\Laracms\Models\Article;
 
 class BehaviorLogEvent
 {

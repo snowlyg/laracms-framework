@@ -13,17 +13,17 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Handlers;
+namespace Wanglelecc\Laracms\Handlers;
 
-use 569616226\Laracms\Http\Requests\Request;
-use 569616226\Laracms\Models\Navigation;
-use 569616226\Laracms\Models\Page;
+use Wanglelecc\Laracms\Http\Requests\Request;
+use Wanglelecc\Laracms\Models\Navigation;
+use Wanglelecc\Laracms\Models\Page;
 
 /**
  * 导航处理工具类
  *
  * Class NavigationHandler
- * @package 569616226\Laracms\Handlers
+ * @package Wanglelecc\Laracms\Handlers
  */
 class NavigationHandler
 {

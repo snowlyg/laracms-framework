@@ -13,7 +13,7 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Models;
+namespace Wanglelecc\Laracms\Models;
 
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -23,7 +23,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * 表单模型
  *
  * Class File
- * @package 569616226\Laracms\Models
+ * @package Wanglelecc\Laracms\Models
  */
 class Form extends Model
 {
@@ -34,7 +34,7 @@ class Form extends Model
     protected $dates = ['created_at', 'updated_at', 'deleted_at'];
 
     public function user(){
-        return $this->belongsTo('569616226\Laracms\Models\User', 'user_id');
+        return $this->belongsTo('Wanglelecc\Laracms\Models\User', 'user_id');
     }
 
     /**

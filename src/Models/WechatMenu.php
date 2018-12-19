@@ -13,12 +13,12 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Models;
+namespace Wanglelecc\Laracms\Models;
 
 use EasyWeChat\Kernel\Messages\Text;
 use EasyWeChat\Kernel\Messages\News;
 use EasyWeChat\Kernel\Messages\NewsItem;
-use 569616226\Laracms\Events\BehaviorLogEvent;
+use Wanglelecc\Laracms\Events\BehaviorLogEvent;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 
@@ -26,7 +26,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * 微信菜单模型
  *
  * Class WechatMenu
- * @package 569616226\Laracms\Models
+ * @package Wanglelecc\Laracms\Models
  */
 class WechatMenu extends Model
 {

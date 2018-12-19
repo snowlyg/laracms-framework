@@ -13,9 +13,9 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Observers;
+namespace Wanglelecc\Laracms\Observers;
 
-use 569616226\Laracms\Models\Page;
+use Wanglelecc\Laracms\Models\Page;
 use Illuminate\Support\Facades\Auth;
 
 // creating, created, updating, updated, saving,
@@ -25,7 +25,7 @@ use Illuminate\Support\Facades\Auth;
  * 单页面观察者
  *
  * Class PageObserver
- * @package 569616226\Laracms\Observers
+ * @package Wanglelecc\Laracms\Observers
  */
 class PageObserver
 {

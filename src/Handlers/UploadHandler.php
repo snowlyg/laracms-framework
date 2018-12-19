@@ -13,18 +13,18 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Handlers;
+namespace Wanglelecc\Laracms\Handlers;
 
 use Image;
 use Illuminate\HTTP\File;
 use Illuminate\Support\Facades\Storage;
-use 569616226\Laracms\Models\File as FileModel;
+use Wanglelecc\Laracms\Models\File as FileModel;
 
 /**
  * 文件上传工具类
  *
  * Class UploadHandler
- * @package 569616226\Laracms\Handlers
+ * @package Wanglelecc\Laracms\Handlers
  */
 class UploadHandler
 {

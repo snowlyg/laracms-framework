@@ -13,13 +13,13 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Providers;
+namespace Wanglelecc\Laracms\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
-use 569616226\Laracms\Models\Setting;
-use 569616226\Laracms\Handlers\AdministratorMenuHandler;
+use Wanglelecc\Laracms\Models\Setting;
+use Wanglelecc\Laracms\Handlers\AdministratorMenuHandler;
 
 
 class AppServiceProvider extends ServiceProvider
@@ -32,23 +32,23 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
 	{
 	    // 注册模型观察者
-		\569616226\Laracms\Models\User::observe(                  \569616226\Laracms\Observers\UserObserver::class);
-		\569616226\Laracms\Models\WechatMenu::observe(            \569616226\Laracms\Observers\WechatMenuObserver::class);
-		\569616226\Laracms\Models\Wechat::observe(                \569616226\Laracms\Observers\WechatObserver::class);
-		\569616226\Laracms\Models\Block::observe(                 \569616226\Laracms\Observers\BlockObserver::class);
-		\569616226\Laracms\Models\Link::observe(                  \569616226\Laracms\Observers\LinkObserver::class);
-		\569616226\Laracms\Models\Project::observe(               \569616226\Laracms\Observers\ProjectObserver::class);
-		\569616226\Laracms\Models\Category::observe(              \569616226\Laracms\Observers\CategoryObserver::class);
-		\569616226\Laracms\Models\Navigation::observe(            \569616226\Laracms\Observers\NavigationObserver::class);
-		\569616226\Laracms\Models\Page::observe(                  \569616226\Laracms\Observers\PageObserver::class);
-		\569616226\Laracms\Models\Article::observe(               \569616226\Laracms\Observers\ArticleObserver::class);
-		\569616226\Laracms\Models\Slide::observe(                 \569616226\Laracms\Observers\SlideObserver::class);
-		\569616226\Laracms\Models\File::observe(                  \569616226\Laracms\Observers\FileObserver::class);
-		\569616226\Laracms\Models\WechatResponse::observe(        \569616226\Laracms\Observers\WechatResponseObserver::class);
-		\569616226\Laracms\Models\Reply::observe(                 \569616226\Laracms\Observers\ReplyObserver::class);
-		\569616226\Laracms\Models\Log::observe(                   \569616226\Laracms\Observers\LogObserver::class);
-		\569616226\Laracms\Models\MultipleFile::observe(          \569616226\Laracms\Observers\MultipleFileObserver::class);
-		\569616226\Laracms\Models\Form::observe(                  \569616226\Laracms\Observers\FormObserver::class);
+		\Wanglelecc\Laracms\Models\User::observe(                  \Wanglelecc\Laracms\Observers\UserObserver::class);
+		\Wanglelecc\Laracms\Models\WechatMenu::observe(            \Wanglelecc\Laracms\Observers\WechatMenuObserver::class);
+		\Wanglelecc\Laracms\Models\Wechat::observe(                \Wanglelecc\Laracms\Observers\WechatObserver::class);
+		\Wanglelecc\Laracms\Models\Block::observe(                 \Wanglelecc\Laracms\Observers\BlockObserver::class);
+		\Wanglelecc\Laracms\Models\Link::observe(                  \Wanglelecc\Laracms\Observers\LinkObserver::class);
+		\Wanglelecc\Laracms\Models\Project::observe(               \Wanglelecc\Laracms\Observers\ProjectObserver::class);
+		\Wanglelecc\Laracms\Models\Category::observe(              \Wanglelecc\Laracms\Observers\CategoryObserver::class);
+		\Wanglelecc\Laracms\Models\Navigation::observe(            \Wanglelecc\Laracms\Observers\NavigationObserver::class);
+		\Wanglelecc\Laracms\Models\Page::observe(                  \Wanglelecc\Laracms\Observers\PageObserver::class);
+		\Wanglelecc\Laracms\Models\Article::observe(               \Wanglelecc\Laracms\Observers\ArticleObserver::class);
+		\Wanglelecc\Laracms\Models\Slide::observe(                 \Wanglelecc\Laracms\Observers\SlideObserver::class);
+		\Wanglelecc\Laracms\Models\File::observe(                  \Wanglelecc\Laracms\Observers\FileObserver::class);
+		\Wanglelecc\Laracms\Models\WechatResponse::observe(        \Wanglelecc\Laracms\Observers\WechatResponseObserver::class);
+		\Wanglelecc\Laracms\Models\Reply::observe(                 \Wanglelecc\Laracms\Observers\ReplyObserver::class);
+		\Wanglelecc\Laracms\Models\Log::observe(                   \Wanglelecc\Laracms\Observers\LogObserver::class);
+		\Wanglelecc\Laracms\Models\MultipleFile::observe(          \Wanglelecc\Laracms\Observers\MultipleFileObserver::class);
+		\Wanglelecc\Laracms\Models\Form::observe(                  \Wanglelecc\Laracms\Observers\FormObserver::class);
 
         // 设置时区
         \Carbon\Carbon::setLocale('zh');

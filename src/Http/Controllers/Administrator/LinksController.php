@@ -13,17 +13,17 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Controllers\Administrator;
+namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
 
-use 569616226\Laracms\Models\Link;
+use Wanglelecc\Laracms\Models\Link;
 use Illuminate\Http\Request;
-use 569616226\Laracms\Http\Requests\Administrator\LinkRequest;
+use Wanglelecc\Laracms\Http\Requests\Administrator\LinkRequest;
 
 /**
  * 友情链接
  *
  * Class LinksController
- * @package 569616226\Laracms\Http\Controllers\Administrator
+ * @package Wanglelecc\Laracms\Http\Controllers\Administrator
  */
 class LinksController extends Controller
 {

@@ -13,17 +13,17 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Models;
+namespace Wanglelecc\Laracms\Models;
 
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use 569616226\Laracms\Events\BehaviorLogEvent;
+use Wanglelecc\Laracms\Events\BehaviorLogEvent;
 
 /**
  * 导航模型
  *
  * Class Navigation
- * @package 569616226\Laracms\Models
+ * @package Wanglelecc\Laracms\Models
  */
 class Navigation extends Model
 {

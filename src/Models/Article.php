@@ -13,14 +13,14 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Models;
+namespace Wanglelecc\Laracms\Models;
 
 use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use 569616226\Laracms\Models\Traits\WithCommonHelper;
-use 569616226\Laracms\Events\BehaviorLogEvent;
+use Wanglelecc\Laracms\Models\Traits\WithCommonHelper;
+use Wanglelecc\Laracms\Events\BehaviorLogEvent;
 use Illuminate\Database\Eloquent\Builder;
 
 
@@ -28,7 +28,7 @@ use Illuminate\Database\Eloquent\Builder;
  * 文章模型
  *
  * Class Article
- * @package 569616226\Laracms\Models
+ * @package Wanglelecc\Laracms\Models
  */
 class Article extends Model
 {
@@ -84,11 +84,11 @@ class Article extends Model
     }
 
     public function created_user(){
-        return $this->belongsTo('569616226\Laracms\Models\User', 'created_op');
+        return $this->belongsTo('Wanglelecc\Laracms\Models\User', 'created_op');
     }
 
     public function updated_user(){
-        return $this->belongsTo('569616226\Laracms\Models\User', 'updated_op');
+        return $this->belongsTo('Wanglelecc\Laracms\Models\User', 'updated_op');
     }
 
     public function replies()
@@ -122,7 +122,7 @@ class Article extends Model
     public function category(): MorphToMany
     {
         return $this->morphToMany(
-            '569616226\Laracms\Models\Category',
+            'Wanglelecc\Laracms\Models\Category',
             'model',
             'model_has_category',
             'model_id',
@@ -138,7 +138,7 @@ class Article extends Model
     public function categorys(): BelongsToMany
     {
         return $this->belongsToMany(
-            '569616226\Laracms\Models\Category',
+            'Wanglelecc\Laracms\Models\Category',
             'article_category',
             'article_id',
             'category_id'

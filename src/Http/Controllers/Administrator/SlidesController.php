@@ -13,17 +13,17 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Controllers\Administrator;
+namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
 
-use 569616226\Laracms\Models\Slide;
+use Wanglelecc\Laracms\Models\Slide;
 use Illuminate\Http\Request;
-use 569616226\Laracms\Http\Requests\Administrator\SlideRequest;
+use Wanglelecc\Laracms\Http\Requests\Administrator\SlideRequest;
 
 /**
  * 幻灯片控制器
  *
  * Class SlidesController
- * @package 569616226\Laracms\Http\Controllers\Administrator
+ * @package Wanglelecc\Laracms\Http\Controllers\Administrator
  */
 class SlidesController extends Controller
 {

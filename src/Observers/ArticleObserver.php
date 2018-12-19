@@ -13,9 +13,9 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Observers;
+namespace Wanglelecc\Laracms\Observers;
 
-use 569616226\Laracms\Models\Article;
+use Wanglelecc\Laracms\Models\Article;
 use Illuminate\Support\Facades\Auth;
 
 // creating, created, updating, updated, saving,
@@ -25,7 +25,7 @@ use Illuminate\Support\Facades\Auth;
  * 文章观察者
  *
  * Class ArticleObserver
- * @package 569616226\Laracms\Observers
+ * @package Wanglelecc\Laracms\Observers
  */
 class ArticleObserver
 {
@@ -62,7 +62,7 @@ class ArticleObserver
 
     public function saved(Article $article){
         // 分发事件
-        $event_class_name = '\\569616226\\Laracms\\Events\\' . ucfirst($article->type) . 'SavedEvent';
+        $event_class_name = '\\Wanglelecc\\Laracms\\Events\\' . ucfirst($article->type) . 'SavedEvent';
         class_exists($event_class_name) && event(new $event_class_name($article));
     }
 

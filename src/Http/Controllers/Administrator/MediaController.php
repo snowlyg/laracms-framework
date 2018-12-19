@@ -13,16 +13,16 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Controllers\Administrator;
+namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
 
-use 569616226\Laracms\Models\File;
+use Wanglelecc\Laracms\Models\File;
 use Illuminate\Http\Request;
 
 /**
  * 媒体控制器
  *
  * Class MediaController
- * @package 569616226\Laracms\Http\Controllers\Administrator
+ * @package Wanglelecc\Laracms\Http\Controllers\Administrator
  */
 class MediaController extends Controller
 {

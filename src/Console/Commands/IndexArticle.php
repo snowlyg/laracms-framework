@@ -13,18 +13,18 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Console\Commands;
+namespace Wanglelecc\Laracms\Console\Commands;
 
 use Illuminate\Console\Command;
 use TeamTNT\TNTSearch\TNTSearch;
-use 569616226\Laracms\Models\Article;
-use 569616226\Laracms\Handlers\TokenizerHandler;
+use Wanglelecc\Laracms\Models\Article;
+use Wanglelecc\Laracms\Handlers\TokenizerHandler;
 
 /**
  * 手动生成文章分词索引
  *
  * Class IndexArticle
- * @package 569616226\Laracms\Console\Commands
+ * @package Wanglelecc\Laracms\Console\Commands
  */
 class IndexArticle extends Command
 {

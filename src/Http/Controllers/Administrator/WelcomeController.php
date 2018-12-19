@@ -13,7 +13,7 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Controllers\Administrator;
+namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
 
 use Illuminate\Http\Request;
 use Auth;
@@ -22,7 +22,7 @@ use Auth;
  * Welcome 控制器
  *
  * Class WelcomeController
- * @package 569616226\Laracms\Http\Controllers\Administrator
+ * @package Wanglelecc\Laracms\Http\Controllers\Administrator
  */
 class WelcomeController extends Controller
 {

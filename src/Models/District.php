@@ -13,13 +13,13 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Models;
+namespace Wanglelecc\Laracms\Models;
 
 /**
  * 中国行政区
  *
  * Class Block
- * @package 569616226\Laracms\Models
+ * @package Wanglelecc\Laracms\Models
  */
 class District extends Model
 {

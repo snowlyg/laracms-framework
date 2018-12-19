@@ -13,13 +13,13 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Observers;
+namespace Wanglelecc\Laracms\Observers;
 
 use Ip;
 use Auth;
 use Agent;
 use Request;
-use 569616226\Laracms\Models\Log;
+use Wanglelecc\Laracms\Models\Log;
 use Illuminate\Support\Carbon;
 
 // creating, created, updating, updated, saving,
@@ -29,7 +29,7 @@ use Illuminate\Support\Carbon;
  * 日志观察者
  *
  * Class LogObserver
- * @package 569616226\Laracms\Observers
+ * @package Wanglelecc\Laracms\Observers
  */
 class LogObserver
 {

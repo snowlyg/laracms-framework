@@ -13,7 +13,7 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Policies;
+namespace Wanglelecc\Laracms\Policies;
 
 use Illuminate\Auth\Access\HandlesAuthorization;
 
@@ -21,7 +21,7 @@ use Illuminate\Auth\Access\HandlesAuthorization;
  * 授权策略基类
  *
  * Class Policy
- * @package 569616226\Laracms\Policies
+ * @package Wanglelecc\Laracms\Policies
  */
 class Policy
 {

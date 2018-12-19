@@ -13,21 +13,21 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Controllers;
+namespace Wanglelecc\Laracms\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Log;
-use 569616226\Laracms\Models\Wechat;
+use Wanglelecc\Laracms\Models\Wechat;
 use EasyWeChat\Kernel\Messages\Message;
 use EasyWeChat\Kernel\Messages\Transfer;
-use 569616226\Laracms\Handlers\TextMessageHandler;
-use 569616226\Laracms\Handlers\EventMessageHandler;
+use Wanglelecc\Laracms\Handlers\TextMessageHandler;
+use Wanglelecc\Laracms\Handlers\EventMessageHandler;
 
 /**
  * 微信控制器
  *
  * Class WeChatController
- * @package 569616226\Laracms\Http\Controllers
+ * @package Wanglelecc\Laracms\Http\Controllers
  */
 class WeChatController extends Controller
 {

@@ -9,11 +9,11 @@
  * with this source code in the file LICENSE.
  */
 
-namespace 569616226\Laracms\Providers;
+namespace Wanglelecc\Laracms\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use 569616226\Laracms\Console;
-use 569616226\Laracms\Http\Middleware;
+use Wanglelecc\Laracms\Console;
+use Wanglelecc\Laracms\Http\Middleware;
 
 class LaracmsServiceProvider extends ServiceProvider
 {

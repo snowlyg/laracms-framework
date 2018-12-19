@@ -1,6 +1,6 @@
 <?php
 
-namespace 569616226\Laracms\Http\Middleware;
+namespace Wanglelecc\Laracms\Http\Middleware;
 
 use Illuminate\Auth\Middleware\Authenticate as Middleware;
 

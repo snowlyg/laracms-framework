@@ -13,20 +13,20 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Handlers;
-use 569616226\Laracms\Models\Article;
-use 569616226\Laracms\Models\Category;
-use 569616226\Laracms\Models\Block;
-use 569616226\Laracms\Models\Link;
-use 569616226\Laracms\Models\Page;
-use 569616226\Laracms\Models\Slide;
-use 569616226\Laracms\Handlers\CategoryHandler;
+namespace Wanglelecc\Laracms\Handlers;
+use Wanglelecc\Laracms\Models\Article;
+use Wanglelecc\Laracms\Models\Category;
+use Wanglelecc\Laracms\Models\Block;
+use Wanglelecc\Laracms\Models\Link;
+use Wanglelecc\Laracms\Models\Page;
+use Wanglelecc\Laracms\Models\Slide;
+use Wanglelecc\Laracms\Handlers\CategoryHandler;
 
 /**
  * 区块工具类
  *
  * Class BlockHandler
- * @package 569616226\Laracms\Handlers
+ * @package Wanglelecc\Laracms\Handlers
  */
 class BlockHandler
 {

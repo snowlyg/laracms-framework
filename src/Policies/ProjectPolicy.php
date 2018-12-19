@@ -13,10 +13,10 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Policies;
+namespace Wanglelecc\Laracms\Policies;
 
-use 569616226\Laracms\Models\User;
-use 569616226\Laracms\Models\Project;
+use Wanglelecc\Laracms\Models\User;
+use Wanglelecc\Laracms\Models\Project;
 
 class ProjectPolicy extends Policy
 {

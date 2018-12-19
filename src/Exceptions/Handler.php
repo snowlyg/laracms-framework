@@ -13,7 +13,7 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Exceptions;
+namespace Wanglelecc\Laracms\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;

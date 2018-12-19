@@ -1,6 +1,6 @@
 <?php
 
-namespace 569616226\Laracms\Providers;
+namespace Wanglelecc\Laracms\Providers;
 
 use Overtrue\EasySms\EasySms;
 use Illuminate\Support\ServiceProvider;

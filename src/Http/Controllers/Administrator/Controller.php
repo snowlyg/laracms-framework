@@ -13,15 +13,15 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Controllers\Administrator;
+namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
 
-use 569616226\Laracms\Http\Controllers\Controller as BaseController;
+use Wanglelecc\Laracms\Http\Controllers\Controller as BaseController;
 
 /**
  * Administrator 基础控制器
  *
  * Class Controller
- * @package 569616226\Laracms\Http\Controllers
+ * @package Wanglelecc\Laracms\Http\Controllers
  */
 class Controller extends BaseController
 {

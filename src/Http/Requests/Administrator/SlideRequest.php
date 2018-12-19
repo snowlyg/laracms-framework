@@ -13,7 +13,7 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Requests\Administrator;
+namespace Wanglelecc\Laracms\Http\Requests\Administrator;
 
 class SlideRequest extends Request
 {

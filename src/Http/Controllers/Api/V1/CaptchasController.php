@@ -13,19 +13,19 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Controllers\Api\V1;
+namespace Wanglelecc\Laracms\Http\Controllers\Api\V1;
 
 use Illuminate\Http\Request;
 use Gregwar\Captcha\CaptchaBuilder;
 use Gregwar\Captcha\PhraseBuilder;
-use 569616226\Laracms\Http\Controllers\Api\Controller;
-use 569616226\Laracms\Http\Requests\Api\V1\CaptchaRequest;
+use Wanglelecc\Laracms\Http\Controllers\Api\Controller;
+use Wanglelecc\Laracms\Http\Requests\Api\V1\CaptchaRequest;
 
 /**
  * 验证码控制器
  *
  * Class CaptchasController
- * @package 569616226\Laracms\Http\Controllers\Api\V1
+ * @package Wanglelecc\Laracms\Http\Controllers\Api\V1
  */
 class CaptchasController extends Controller
 {

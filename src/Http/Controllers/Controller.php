@@ -13,9 +13,9 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Controllers;
+namespace Wanglelecc\Laracms\Http\Controllers;
 
-use 569616226\Laracms\Http\Requests\Request;
+use Wanglelecc\Laracms\Http\Requests\Request;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -25,7 +25,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
  * 基础控制器
  *
  * Class Controller
- * @package 569616226\Laracms\Http\Controllers
+ * @package Wanglelecc\Laracms\Http\Controllers
  */
 class Controller extends BaseController
 {

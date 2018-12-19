@@ -13,16 +13,16 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Console\Commands;
+namespace Wanglelecc\Laracms\Console\Commands;
 
 use Illuminate\Console\Command;
-use 569616226\Laracms\Models\User;
+use Wanglelecc\Laracms\Models\User;
 
 /**
  * 调试 API 辅助工具 - 快速生成用户 Token
  *
  * Class GenerateToken
- * @package 569616226\Laracms\Console\Commands
+ * @package Wanglelecc\Laracms\Console\Commands
  */
 class GenerateToken extends Command
 {

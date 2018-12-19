@@ -13,16 +13,16 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Policies;
+namespace Wanglelecc\Laracms\Policies;
 
-use 569616226\Laracms\Models\User;
-use 569616226\Laracms\Models\Navigation;
+use Wanglelecc\Laracms\Models\User;
+use Wanglelecc\Laracms\Models\Navigation;
 
 /**
  * 导航授权策略
  *
  * Class NavigationPolicy
- * @package 569616226\Laracms\Policies
+ * @package Wanglelecc\Laracms\Policies
  */
 class NavigationPolicy extends Policy
 {

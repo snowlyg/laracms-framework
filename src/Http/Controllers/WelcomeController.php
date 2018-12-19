@@ -13,16 +13,16 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Controllers;
+namespace Wanglelecc\Laracms\Http\Controllers;
 
 use Illuminate\Http\Request;
-use 569616226\Laracms\Models\Article;
+use Wanglelecc\Laracms\Models\Article;
 
 /**
  * 前台公共控制器
  *
  * Class WelcomeController
- * @package 569616226\Laracms\Http\Controllers
+ * @package Wanglelecc\Laracms\Http\Controllers
  */
 class WelcomeController extends Controller
 {

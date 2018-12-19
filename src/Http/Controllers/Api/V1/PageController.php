@@ -13,18 +13,18 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Controllers\Api\V1;
+namespace Wanglelecc\Laracms\Http\Controllers\Api\V1;
 
 use Illuminate\Http\Request;
-use 569616226\Laracms\Http\Controllers\Api\Controller;
-use 569616226\Laracms\Transformers\PageTransformer;
-use 569616226\Laracms\Models\Page;
+use Wanglelecc\Laracms\Http\Controllers\Api\Controller;
+use Wanglelecc\Laracms\Transformers\PageTransformer;
+use Wanglelecc\Laracms\Models\Page;
 
 /**
  * 页面控制器
  *
  * Class PageController
- * @package 569616226\Laracms\Http\Controllers\Api\V1
+ * @package Wanglelecc\Laracms\Http\Controllers\Api\V1
  */
 class PageController extends Controller
 {

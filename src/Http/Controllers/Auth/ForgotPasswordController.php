@@ -13,9 +13,9 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Controllers\Auth;
+namespace Wanglelecc\Laracms\Http\Controllers\Auth;
 
-use 569616226\Laracms\Http\Controllers\Controller;
+use Wanglelecc\Laracms\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 use Illuminate\Http\Request;
 

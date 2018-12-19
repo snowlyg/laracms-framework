@@ -13,7 +13,7 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Requests;
+namespace Wanglelecc\Laracms\Http\Requests;
 
 class VerificationCodeRequest extends Request
 {

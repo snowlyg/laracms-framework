@@ -13,21 +13,21 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Controllers\Administrator;
+namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
 
 use DB;
-use 569616226\Laracms\Models\Article;
+use Wanglelecc\Laracms\Models\Article;
 use Illuminate\Http\Request;
-use 569616226\Laracms\Http\Requests\Administrator\ArticleRequest;
-use 569616226\Laracms\Handlers\CategoryHandler;
-use 569616226\Laracms\Models\Category;
-use 569616226\Laracms\Models\MultipleFile;
+use Wanglelecc\Laracms\Http\Requests\Administrator\ArticleRequest;
+use Wanglelecc\Laracms\Handlers\CategoryHandler;
+use Wanglelecc\Laracms\Models\Category;
+use Wanglelecc\Laracms\Models\MultipleFile;
 
 /**
  * 后台文章管理控制器
  *
  * Class ArticlesController
- * @package 569616226\Laracms\Http\Controllers\Administrator
+ * @package Wanglelecc\Laracms\Http\Controllers\Administrator
  */
 class ArticlesController extends Controller
 {

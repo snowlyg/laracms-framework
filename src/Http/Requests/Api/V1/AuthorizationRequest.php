@@ -13,7 +13,7 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Requests\Api\V1;
+namespace Wanglelecc\Laracms\Http\Requests\Api\V1;
 
 class AuthorizationRequest extends Request
 {

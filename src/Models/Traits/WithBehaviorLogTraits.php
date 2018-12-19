@@ -13,9 +13,9 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Models\Traits;
+namespace Wanglelecc\Laracms\Models\Traits;
 
-use 569616226\Laracms\Events\BehaviorLogEvent;
+use Wanglelecc\Laracms\Events\BehaviorLogEvent;
 
 trait WithBehaviorLogTraits
 {

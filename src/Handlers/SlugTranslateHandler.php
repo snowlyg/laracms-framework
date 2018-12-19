@@ -13,7 +13,7 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Handlers;
+namespace Wanglelecc\Laracms\Handlers;
 
 use GuzzleHttp\Client;
 use Overtrue\Pinyin\Pinyin;
@@ -22,7 +22,7 @@ use Overtrue\Pinyin\Pinyin;
  * 预言翻译工具（暂未用到）
  *
  * Class SlugTranslateHandler
- * @package 569616226\Laracms\Handlers
+ * @package Wanglelecc\Laracms\Handlers
  */
 class SlugTranslateHandler
 {

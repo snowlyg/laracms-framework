@@ -31,7 +31,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => 569616226\Laracms\Models\User::class,
+        'model' => Wanglelecc\Laracms\Models\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

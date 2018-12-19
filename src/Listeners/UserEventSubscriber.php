@@ -13,7 +13,7 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Listeners;
+namespace Wanglelecc\Laracms\Listeners;
 
 use Request;
 use Illuminate\Support\Carbon;
@@ -68,17 +68,17 @@ class UserEventSubscriber
     {
         $events->listen(
             'Illuminate\Auth\Events\Login',
-            '569616226\Laracms\Listeners\UserEventSubscriber@onUserLoginLast'
+            'Wanglelecc\Laracms\Listeners\UserEventSubscriber@onUserLoginLast'
         );
 
         $events->listen(
             'Illuminate\Auth\Events\Login',
-            '569616226\Laracms\Listeners\UserEventSubscriber@onUserLogin'
+            'Wanglelecc\Laracms\Listeners\UserEventSubscriber@onUserLogin'
         );
 
         $events->listen(
             'Illuminate\Auth\Events\Logout',
-            '569616226\Laracms\Listeners\UserEventSubscriber@onUserLogout'
+            'Wanglelecc\Laracms\Listeners\UserEventSubscriber@onUserLogout'
         );
     }
 }

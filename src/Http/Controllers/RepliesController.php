@@ -13,18 +13,18 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Controllers;
+namespace Wanglelecc\Laracms\Http\Controllers;
 
-use 569616226\Laracms\Models\Reply;
+use Wanglelecc\Laracms\Models\Reply;
 use Illuminate\Http\Request;
-use 569616226\Laracms\Http\Requests\ReplyRequest;
+use Wanglelecc\Laracms\Http\Requests\ReplyRequest;
 use Auth;
 
 /**
  * 回复控制器
  *
  * Class RepliesController
- * @package 569616226\Laracms\Http\Controllers
+ * @package Wanglelecc\Laracms\Http\Controllers
  */
 class RepliesController extends Controller
 {

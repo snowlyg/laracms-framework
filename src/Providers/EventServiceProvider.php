@@ -1,6 +1,6 @@
 <?php
 
-namespace 569616226\Laracms\Providers;
+namespace Wanglelecc\Laracms\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -22,17 +22,17 @@ class EventServiceProvider extends ServiceProvider
         ],
 
         '569616226\LaracmsEvents\BehaviorLogEvent' => [
-            '569616226\Laracms\Listeners\BehaviorLogListener',
+            'Wanglelecc\Laracms\Listeners\BehaviorLogListener',
         ],
 
-        '569616226\Laracms\Events\Event' => [
-            '569616226\Laracms\Listeners\EventListener',
+        'Wanglelecc\Laracms\Events\Event' => [
+            'Wanglelecc\Laracms\Listeners\EventListener',
         ],
 
 
 
 //        'Illuminate\Auth\Events\Login' => [
-//            '569616226\Laracms\Listeners\UserEventSubscriber@onUserLogin'
+//            'Wanglelecc\Laracms\Listeners\UserEventSubscriber@onUserLogin'
 //        ],
     ];
 
@@ -42,7 +42,7 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $subscribe = [
-        '569616226\Laracms\Listeners\UserEventSubscriber',
+        'Wanglelecc\Laracms\Listeners\UserEventSubscriber',
     ];
 
     /**

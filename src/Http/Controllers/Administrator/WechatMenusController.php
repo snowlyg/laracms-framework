@@ -13,13 +13,13 @@
  * @version   Release 1.0
  */
 
-namespace 569616226\Laracms\Http\Controllers\Administrator;
+namespace Wanglelecc\Laracms\Http\Controllers\Administrator;
 
-use 569616226\Laracms\Models\Wechat;
-use 569616226\Laracms\Models\WechatMenu;
+use Wanglelecc\Laracms\Models\Wechat;
+use Wanglelecc\Laracms\Models\WechatMenu;
 use Illuminate\Http\Request;
-use 569616226\Laracms\Http\Requests\Administrator\WechatMenuRequest;
-use 569616226\Laracms\Handlers\WechatMenuHandler;
+use Wanglelecc\Laracms\Http\Requests\Administrator\WechatMenuRequest;
+use Wanglelecc\Laracms\Handlers\WechatMenuHandler;
 use EasyWeChat\Factory;
 use EasyWeChat\Kernel\Exceptions\HttpException;
 
@@ -27,7 +27,7 @@ use EasyWeChat\Kernel\Exceptions\HttpException;
  * 微信菜单控制器
  *
  * Class WechatMenusController
- * @package 569616226\Laracms\Http\Controllers\Administrator
+ * @package Wanglelecc\Laracms\Http\Controllers\Administrator
  */
 class WechatMenusController extends Controller
 {
