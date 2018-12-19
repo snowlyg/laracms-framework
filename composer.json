@@ -1,12 +1,12 @@
 {
-    "name": "569616226\/laracms-framework",
+    "name": "snowlyg\/laracms-framework",
     "description": "A LaraCMS Framework.",
     "license": "MIT",
     "authors": [
         {
-            "name": "569616226",
+            "name": "snowlyg",
             "email": "569616226@qq.com",
-            "homepage": "https://packagist.org/packages/569616226/laracms-framework",
+            "homepage": "https://packagist.org/packages/snowlyg/laracms-framework",
             "role": "Developer"
         }
     ],
